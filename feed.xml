@@ -1,46 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-05-10T16:44:38-04:00</updated><id>/</id><title type="html">Eric Bai</title><subtitle>A blog about building things.</subtitle><entry><title type="html">I Made Some Data Visualizations For My Girlfriend</title><link href="/2018/05/10/i-made-some-data-visualizations-for-my-girlfriend/" rel="alternate" type="text/html" title="I Made Some Data Visualizations For My Girlfriend" /><published>2018-05-10T07:00:00-04:00</published><updated>2018-05-10T07:00:00-04:00</updated><id>/2018/05/10/i-made-some-data-visualizations-for-my-girlfriend</id><content type="html" xml:base="/2018/05/10/i-made-some-data-visualizations-for-my-girlfriend/">&lt;p&gt;I just finished my undergrad last month, and it’s really sinking in how special and fleeting the past five years have been. I’m privileged to have had so many unique opportunities and experiences throughout these fourteen trimesters, both in my career and personal life. I’ve also met so many amazing people that I’m lucky to call my friends. In fact, I happened to meet my soon-to-be best friend during the first week of university, and now we’ve been dating for over four years.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-05-10T18:09:30-04:00</updated><id>/</id><title type="html">Eric Bai</title><subtitle>A blog about building things.</subtitle><entry><title type="html">I Made Some Data Visualizations For My Girlfriend</title><link href="/2018/05/10/i-made-some-data-visualizations-for-my-girlfriend/" rel="alternate" type="text/html" title="I Made Some Data Visualizations For My Girlfriend" /><published>2018-05-10T07:00:00-04:00</published><updated>2018-05-10T07:00:00-04:00</updated><id>/2018/05/10/i-made-some-data-visualizations-for-my-girlfriend</id><content type="html" xml:base="/2018/05/10/i-made-some-data-visualizations-for-my-girlfriend/">&lt;p&gt;I just finished my undergrad last month, and it’s really sinking in how special and fleeting the past five years have been. I’m privileged to have had so many unique opportunities and experiences throughout these fourteen trimesters, both in my career and personal life. I’ve also met so many amazing people that I’m lucky to call my friends. In fact, I happened to meet my soon-to-be best friend during the first week of university, and now we’ve been dating for over four years.&lt;/p&gt;
 
 &lt;p&gt;To commemorate spending all of my university life with Camille, I made some data visualizations of our Facebook messages. This involved analyzing over 152,000 messages that span from October 2013 up until April 2018. Let’s dive in!&lt;/p&gt;
 
 &lt;h3 id=&quot;graphs&quot;&gt;Graphs&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/sender_messages.png&quot; alt=&quot;messages sent&quot; style=&quot;max-height: 500px;&quot; /&gt;
-&lt;img src=&quot;/assets/images/chatstats/words_per_message.png&quot; alt=&quot;words per message&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/number-of-messages-sent.png&quot; alt=&quot;messages sent&quot; style=&quot;max-height: 500px;&quot; /&gt;
+&lt;img src=&quot;/assets/images/chatstats/average-number-of-words-per-message.png&quot; alt=&quot;words per message&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Camille messages more, but at least I have more words per message… Hope that makes up for the difference. 😅&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/weekday_messages.png&quot; alt=&quot;messages by weekday&quot; style=&quot;max-height: 500px;&quot; /&gt;
-&lt;img src=&quot;/assets/images/chatstats/time_in_day_messages.png&quot; alt=&quot;messages by hour of day&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/messages-by-weekday.png&quot; alt=&quot;messages by weekday&quot; style=&quot;max-height: 500px;&quot; /&gt;
+&lt;img src=&quot;/assets/images/chatstats/messages-by-hour-of-day.png&quot; alt=&quot;messages by hour of day&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Camille messages more at every hour and every day of the week… except for 5AM. Probably because of my bad sleep habits, or the timezone difference from when I was traveling. I swear Camille has a weirder sleeping schedule, but the stats don’t lie.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/per_term_messages.png&quot; alt=&quot;messages by hour of day&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/messages-by-trimester.png&quot; alt=&quot;messages by hour of day&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;As anyone from UWaterloo knows, UW students’ lives are divided into four month chunks, where we alternate between school and co-op. This involves a lot of moving around, so our texting habits are bound to vary a lot every trimester.&lt;/p&gt;
 
 &lt;p&gt;The trimesters with the most messages all occurred when we were super long-distance. I was in California in Fall 2016 and Fall 2017, and I was in Singapore in Winter 2017. Probably the life story of too many UWaterloo couples lol.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/top_days_messages.png&quot; alt=&quot;top days messages&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/days-with-the-most-messages.png&quot; alt=&quot;top days messages&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The top three were just average days while we were long-distance. On the top day, April 7th 2017, I started binging The Get Down on Netflix, and I was live-texting her my reactions. (why did they cancel it?? 😭)&lt;/p&gt;
 
 &lt;p&gt;The fourth and fifth days were very recent; it looks like we were procrastinating by talking to each other instead of studying for our exams.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/emoji_total.png&quot; alt=&quot;most frequent emoji&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/most-frequent-emoji.png&quot; alt=&quot;most frequent emoji&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;That’s a lot of sad faces. I guess we’re both stressed out and anxious a lot in university, so please don’t read too much into it LMAO.&lt;/p&gt;
 
 &lt;p&gt;Also, note how I’m clearly the more positive and affectionate person. Where my heart emojis at, Camille??&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/top_stickers.png&quot; alt=&quot;most frequent stickers&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/most-frequent-stickers.png&quot; alt=&quot;most frequent stickers&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I’m constantly serenading Camille with romantic stickers, but she never reciprocates. Wish my gf’s sticker game was stronger.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/names.png&quot; alt=&quot;names said in chat&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/names-said-in-chat.png&quot; alt=&quot;names said in chat&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Why does Camille say my name so much? I know you’re talking to me, we’re the only two people here.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/sender_distinguishing_words.png&quot; alt=&quot;most distinguishing words&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/our-most-distinguishing-words.png&quot; alt=&quot;most distinguishing words&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;To quantify distinctiveness of our words, I computed the &lt;a href=&quot;https://en.wikipedia.org/wiki/Tf%E2%80%93idf&quot;&gt;TF-IDF&lt;/a&gt; values of every word. If a word has a higher score for a person, that means that word is more likely to be spoken by that person.&lt;/p&gt;
 
