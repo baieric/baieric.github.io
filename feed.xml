@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-10T01:10:52-04:00</updated><id>http://localhost:4000/</id><title type="html">Eric Bai</title><subtitle>A blog about building things.</subtitle><entry><title type="html">I Made Some Data Visualizations For My Girlfriend</title><link href="http://localhost:4000/2017/05/10/i-made-some-data-visualizations-for-my-girlfriend/" rel="alternate" type="text/html" title="I Made Some Data Visualizations For My Girlfriend" /><published>2017-05-10T07:00:00-04:00</published><updated>2017-05-10T07:00:00-04:00</updated><id>http://localhost:4000/2017/05/10/i-made-some-data-visualizations-for-my-girlfriend</id><content type="html" xml:base="http://localhost:4000/2017/05/10/i-made-some-data-visualizations-for-my-girlfriend/">&lt;p&gt;I just finished my undergrad last month, and it’s really sinking in how special and fleeting the past five years have been. I’m privileged to have had so many unique opportunities and experiences throughout these fourteen trimesters, both in my career and personal life. I’ve also met so many amazing people that I’m lucky to call my friends. In fact, I happened to meet my soon-to-be best friend during the first week of university, and now we’ve been dating for over four years.&lt;/p&gt;
+
+&lt;p&gt;To commemorate spending all of my university life with Camille, I made some data visualizations of our Facebook messages. This involved analyzing over 152,000 messages that span from October 2013 up until April 2018. Let’s dive in!&lt;/p&gt;
+
+&lt;h3 id=&quot;graphs&quot;&gt;Graphs&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/sender_messages.png&quot; alt=&quot;messages sent&quot; style=&quot;max-height: 500px;&quot; /&gt;
+&lt;img src=&quot;/assets/images/chatstats/words_per_message.png&quot; alt=&quot;words per message&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Camille messages more, but at least I have more words per message… Hope that makes up for the difference. 😅&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/weekday_messages.png&quot; alt=&quot;messages by weekday&quot; style=&quot;max-height: 500px;&quot; /&gt;
+&lt;img src=&quot;/assets/images/chatstats/time_in_day_messages.png&quot; alt=&quot;messages by hour of day&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Camille messages more at every hour and every day of the week… except for 5AM. Probably because of my bad sleep habits, or the a timezone difference from when I was traveling. I swear Camille has a weirder sleeping schedule, but the stats don’t lie.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/per_term_messages.png&quot; alt=&quot;messages by hour of day&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As anyone from UWaterloo knows, UW students’ lives are divided into four month chunks, where we alternate between school and co-op. This involves a lot of moving around, so our texting habits are bound to vary a lot every trimester.&lt;/p&gt;
+
+&lt;p&gt;The trimesters with the most messages all occurred when we were super long-distance. I was in California in Fall 2016 and Fall 2017, and I was in Singapore in Winter 2017. Probably the life story of too many UWaterloo couples lol.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/top_days_messages.png&quot; alt=&quot;top days messages&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I skimmed through our messages on these days, and each one was just an average day while we were long-distance. April 7th was when I started binging The Get Down on Netflix, so I was live-texting her my reactions. (why did they cancel it?? 😭)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/emoji_total.png&quot; alt=&quot;most frequent emoji&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That’s a lot of sad faces. I guess we’re both stressed out and anxious a lot in university, so please don’t read too much into it LMAO.&lt;/p&gt;
+
+&lt;p&gt;Also, note how I’m clearly the more positive and affectionate person. Where my heart emojis at, Camille??&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/top_stickers.png&quot; alt=&quot;most frequent stickers&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m constantly serenading Camille with romantic stickers, but she never reciprocates. Wish my gf’s sticker game was stronger.&lt;/p&gt;
+
+&lt;p&gt;Facebook Foxes, Pusheen, and Sugar Cubs for life. 🤙&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/names.png&quot; alt=&quot;names said in chat&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Why does Camille say my name so much? I know you’re talking to me, we’re the only two people here.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/chatstats/sender_distinguishing_words.png&quot; alt=&quot;most distinguishing words&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To quantify distinctiveness of our words, I computed the &lt;a href=&quot;https://en.wikipedia.org/wiki/Tf%E2%80%93idf&quot;&gt;TF-IDF&lt;/a&gt; values of every word. If a word has a higher score for a person, that means that word is more likely to be spoken by that person.&lt;/p&gt;
+
+&lt;p&gt;It’s fun to see how we talk differently. She likes to leave off the G in “-ing” words. I say “whoa” and she says “woah”. I say “8:30” and she says “830”. I didn’t realize we complained about early classes so often for it to be statistically relevant though.&lt;/p&gt;
+
+&lt;p&gt;I also made a similar graph for most distinguishing words per trimester. It was a blast looking through it with Camille, but it exposes us too hard to share here, haha.&lt;/p&gt;
+
+&lt;p&gt;These were all of the most interesting graphs I managed to make! Camille, thank you for all the experiences we’ve shared during university, and the many more to come. ❤️&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-make-your-own-graphs&quot;&gt;How To Make Your Own Graphs&lt;/h3&gt;
+
+&lt;p&gt;If you want to see these graphs for your own Facebook messages, you’re in luck. &lt;a href=&quot;https://github.com/baieric/chatstats&quot;&gt;&lt;strong&gt;Try out ChatStats on Github to make your own data visualizations&lt;/strong&gt;&lt;/a&gt;. ChatStats even works with group chats, which are also incredibly fun to analyze.&lt;/p&gt;
+
+&lt;p&gt;For those with coding experience: the code is easy to modify and extend, so you can quickly put together new types of graphs.&lt;/p&gt;
+
+&lt;p&gt;If you do try out ChatStats, let me know on &lt;a href=&quot;https://twitter.com/BaiEric&quot;&gt;Twitter&lt;/a&gt; or in the comments!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This post’s cover photo was taken at a random stop on a highway in Iceland. Shout out to the photographer, Kitty Huang!!&lt;/em&gt;&lt;/p&gt;</content><author><name>Eric Bai</name></author><category term="tech" /><summary type="html">I just finished my undergrad last month, and it’s really sinking in how special and fleeting the past five years have been. I’m privileged to have had so many unique opportunities and experiences throughout these fourteen trimesters, both in my career and personal life. I’ve also met so many amazing people that I’m lucky to call my friends. In fact, I happened to meet my soon-to-be best friend during the first week of university, and now we’ve been dating for over four years.</summary></entry><entry><title type="html">Using Bayesian Optimization for Reinforcement Learning</title><link href="http://localhost:4000/2016/12/09/using-bayesian-optimization-for-reinforcement-learning/" rel="alternate" type="text/html" title="Using Bayesian Optimization for Reinforcement Learning" /><published>2016-12-09T03:00:00-05:00</published><updated>2016-12-09T03:00:00-05:00</updated><id>http://localhost:4000/2016/12/09/using-bayesian-optimization-for-reinforcement-learning</id><content type="html" xml:base="http://localhost:4000/2016/12/09/using-bayesian-optimization-for-reinforcement-learning/">&lt;p&gt;In this post, we will show you how &lt;a href=&quot;https://static.sigopt.com/2d66b84dcdbbd7fffad087f58b67a585eb89444c/pdf/SigOpt_Bayesian_Optimization_Primer.pdf&quot;&gt;Bayesian optimization&lt;/a&gt; was able to dramatically improve the performance of a reinforcement learning algorithm in an AI challenge. We’ll provide background information, detailed examples, code, and references.&lt;/p&gt;
+
+&lt;h3 id=&quot;background&quot;&gt;Background&lt;/h3&gt;
+
+&lt;p&gt;Reinforcement learning is a field of machine learning in which a software agent is taught to maximize its acquisition of rewards in a given environment. Observations of the state of the environment are used by the agent to make decisions about which action it should perform in order to maximize its reward.&lt;/p&gt;
+
+&lt;p&gt;Reinforcement learning has recently garnered significant news coverage as a result of innovations in deep Q-networks (DQNs) by DeepMind Technologies. Through deep reinforcement learning, DeepMind was able to teach computers to &lt;a href=&quot;http://www.nature.com/nature/journal/v518/n7540/full/nature14236.html&quot;&gt;play Atari games better than humans&lt;/a&gt;, as well as &lt;a href=&quot;https://en.wikipedia.org/wiki/AlphaGo&quot;&gt;defeat one of the top Go players in the world&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As noted in &lt;a href=&quot;https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf#page=10&quot;&gt;DeepMind’s paper&lt;/a&gt;, an “informal search” for hyperparameter values was conducted in order to avoid the high computational cost of performing grid search. Because the complexity of grid search grows exponentially with the number of parameters being tuned, experts often spend considerable time and resources performing these “informal searches.” This may lead to &lt;a href=&quot;https://www.nervanasys.com/sigopt/&quot;&gt;suboptimal performance&lt;/a&gt;, or can lead to the systems not being tuned at all. Bayesian optimization represents a way to efficiently optimize these high dimensional, time consuming, and expensive problems.&lt;/p&gt;
+
+&lt;p&gt;We will demonstrate the power of hyperparameter optimization by using &lt;a href=&quot;https://start.sigopt.com/&quot;&gt;SigOpt&lt;/a&gt;’s ensemble of state-of-the-art Bayesian optimization techniques to tune a DQN. We’ll show how this approach finds better hyperparameter values much faster than traditional methods such as grid and random search, without requiring expert time spent doing “informal” hand tuning of parameters. The DQN under consideration will be used to solve a classic learning control problem called the Cart-Pole problem &lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;. In this problem, a pole must be balanced upright on a cart for as long as possible. To simulate this environment, we will use &lt;a href=&quot;https://gym.openai.com/&quot;&gt;OpenAI’s Gym library&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/bayesian-optimization/cart-pole.gif&quot; alt=&quot;Figure 1&quot; style=&quot;max-height: 500px;&quot; /&gt;
+&lt;em&gt;‍&lt;strong&gt;Figure 1:&lt;/strong&gt; A rendered episode from the OpenAI Gym’s Cart-Pole environment&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The OpenAI Gym provides a common interface to various reinforcement learning environments; the code written for this post (&lt;a href=&quot;https://github.com/sigopt/sigopt-examples/tree/master/reinforcement-learning&quot;&gt;available on Github&lt;/a&gt;) can be easily modified to solve other learning control problems from the Gym’s environments.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-environment&quot;&gt;The Environment&lt;/h3&gt;
+
+&lt;p&gt;In OpenAI’s simulation of the cart-pole problem, the software agent controls the movement of the cart, earning a &lt;strong&gt;reward&lt;/strong&gt; of +1 for each timestep until the terminating step. A terminating step occurs when the pole is more than 15 degrees from vertical or if the cart has moved more than 2.4 units from the center. The agent receives 4 continuous values that make up the &lt;strong&gt;state&lt;/strong&gt; of the environment at each timestep: the position of the cart on the track, the angle of the pole, the cart velocity, and the rate of change of the angle. The agent’s only possible &lt;strong&gt;actions&lt;/strong&gt; at each timestep are to push the cart to the left or right by applying a force of either -1 or +1, respectively. A series of states and actions, ending in a terminating state, is known as an &lt;strong&gt;episode&lt;/strong&gt;. The agent will have no prior concept about the meaning of the values that represent these states and actions.&lt;/p&gt;
+
+&lt;h3 id=&quot;q-learning&quot;&gt;Q-learning&lt;/h3&gt;
+
+&lt;p&gt;Q-learning is a reinforcement learning technique that develops an action-value function (also known as the Q-function) that returns an expected utility of an action given a current state. Thus, the policy of the agent is to take the action with the highest expected utility.&lt;/p&gt;
+
+&lt;p&gt;Assume there exists an all-knowing Q-function that always selects the best action for a given state. Through Q-learning, we construct an approximation of this all-knowing function by continually updating the approximation using the results of previously attempted actions. The Q-learning algorithm updates the Q-function iteratively, as is explained below; initial Q-values are arbitrarily selected. An existing expected utility is updated when given new information using the following algorithm&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Q_{t+1}(s_t, a_t) = Q_t(s_t, a_t) + \alpha(r_{t+1} + \gamma \max_a( Q_t(s_{t+1}, a)) - Q_t(s_t, a_t)).&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;$a_t$ is the action executed in the state $s_t$.&lt;/li&gt;
+  &lt;li&gt;$s_{t+1}$ is the new state observed. In a deterministic environment&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;#fn3&quot; id=&quot;fnref3&quot;&gt;[3]&lt;/a&gt;&lt;/sup&gt;, it is a function of $s_t$ and $a_t$.&lt;/li&gt;
+  &lt;li&gt;$r_{t+1}$ is the immediate reward gained. It is a function of $s_t$, $a_t$, and $s_{t+1}$.&lt;/li&gt;
+  &lt;li&gt;$\alpha$ is the constant learning rate; how much the new information is weighted relative to the old information.&lt;/li&gt;
+  &lt;li&gt;$\gamma$ is the constant discount factor that determines how much long-term rewards should be valued.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In its simplest form, the Q-function can be implemented as a table mapping all possible combinations of states and actions to expected utility values. Since this is infeasible in environments with large or continuous action and observation spaces, we use a neural net to approximate this lookup table. As the agent continues act within the environment, the estimated Q-function is updated to better approximate the true Q-function via &lt;a href=&quot;https://en.wikipedia.org/wiki/Backpropagation&quot;&gt;backpropagation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-objective-metric&quot;&gt;The Objective Metric&lt;/h3&gt;
+
+&lt;p&gt;To properly tune the hyperparameters of our DQN, we have to select an appropriate objective metric value for SigOpt to optimize. While we are primarily concerned with maximizing the agent’s reward acquisition, we must also consider the DQN’s stability and efficiency. To ensure our agent’s training is efficient, we will train the DQN over the course of only 350 episodes and record the total reward accumulated for each episode. We use a rolling average of the reward for each set of 100 consecutive episodes (episodes 1 to 100, 2 to 101, etc.) and take the maximum for our objective metric. This helps stabilize the agent’s learning while also giving a robust metric for the overall quality of the agent with respect to the reward.&lt;/p&gt;
+
+&lt;h3 id=&quot;tunable-parameters-of-reinforcement-learning-via-deep-q-networks&quot;&gt;Tunable Parameters of Reinforcement Learning Via Deep Q-Networks&lt;/h3&gt;
+
+&lt;p&gt;While there are many tunable hyperparameters in the realm of reinforcement learning and deep Q-networks&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;#fn4&quot; id=&quot;fnref4&quot;&gt;[4]&lt;/a&gt;&lt;/sup&gt;, for this blog post the following 7 parameters&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;#fn5&quot; id=&quot;fnref5&quot;&gt;[5]&lt;/a&gt;&lt;/sup&gt; were selected:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;minibatch_size:&lt;/strong&gt; The number of training cases used to update the Q-network at each training step. These training cases, or minibatches, are randomly selected from the agent’s replay memory. In our implementation, the replay memory contains the last 1,000,000 transitions in the environment.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;epsilon_decay_steps:&lt;/strong&gt; The number of episodes required for the initial $\epsilon$ value to linearly decay until it reaches its end value. $\epsilon$ is the probability that our agent takes a random action, which decreases over time to balance exploration and exploitation. The upper bound for this parameter depends on the total number of episodes run. Initially, $\epsilon$ is 1, and it will decrease until it is 0.1, as suggested in DeepMind’s paper.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;hidden_multiplier:&lt;/strong&gt; Determines the number of nodes in the hidden layers of the Q-network. We set the number of nodes by multiplying this value by the size of the observation space. We formulated this parameter in this way to make it easier to switch to environments with different observation spaces.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;initial_weight_stddev&lt;/strong&gt; and &lt;strong&gt;intial_bias_stddev:&lt;/strong&gt; Both the Q-network’s weights and biases are randomly initialized from normal distributions with a mean of 0. The standard deviations of these distributions affect the rate of convergence of the network.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;learning_rate:&lt;/strong&gt; Regulates the speed and accuracy of the Q-network by controlling the rate at which the weights of the network are updated. We look at this parameter on the logarithmic scale. This is equivalent to $\alpha$ in the Q-learning formula.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;discount_factor:&lt;/strong&gt; Determines the importance of future rewards to the agent. A value closer to zero will place more importance on short-term rewards, and a value closer to 1 will place more importance on long-term rewards. This is equivalent to $\gamma$ in the Q-learning formula.&lt;/p&gt;
+
+&lt;p&gt;Other good hyperparameters to consider tuning are the minimum epsilon value, the replay memory size, and the number of episodes of pure exploration (&lt;strong&gt;_final_epsilon&lt;/strong&gt;, &lt;strong&gt;_replay_memory_size&lt;/strong&gt;, and &lt;strong&gt;_episodes_pure_exploration&lt;/strong&gt; in the Agent class).&lt;/p&gt;
+
+&lt;h3 id=&quot;the-code&quot;&gt;The Code&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/sigopt/sigopt-examples/tree/master/reinforcement-learning&quot;&gt;The code is available on Github&lt;/a&gt;. The only dependencies required to run this example are NumPy, Gym, TensorFlow, and SigOpt. If you don’t have a SigOpt account, you can &lt;a href=&quot;https://sigopt.com/signup&quot;&gt;sign up for a free SigOpt trial&lt;/a&gt;. SigOpt also has &lt;a href=&quot;https://start.sigopt.com/edu&quot;&gt;a free plan available for academic users&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Running this code can be computationally intensive. If possible, try running this example on a CPU optimized machine. On a c4.4xlarge AWS instance, the entire example can take up to 5 hours to run. If you are running the code on an AWS instance, you can try using the SigOpt Community AMI that includes several pre-installed machine learning libraries.&lt;/p&gt;
+
+&lt;h3 id=&quot;results&quot;&gt;Results&lt;/h3&gt;
+
+&lt;p&gt;We compared the results of SigOpt’s Bayesian optimization to two standard hyperparameter tuning methods: grid search and random search&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;#fn6&quot; id=&quot;fnref6&quot;&gt;[6]&lt;/a&gt;&lt;/sup&gt;. 128 objective evaluations for each optimization method were run, and we took the median of 5 runs.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;SigOpt&lt;/th&gt;
+      &lt;th&gt;Random Search&lt;/th&gt;
+      &lt;th&gt;Grid Search&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Best Found&lt;/td&gt;
+      &lt;td&gt;847.19&lt;/td&gt;
+      &lt;td&gt;569.93&lt;/td&gt;
+      &lt;td&gt;194.62&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Table 1:&lt;/strong&gt; SigOpt outperforms random search and grid search.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/bayesian-optimization/best-trace.png&quot; alt=&quot;Figure 2&quot; style=&quot;max-height: 500px;&quot; /&gt;
+&lt;em&gt;&lt;strong&gt;Figure 2:&lt;/strong&gt; The best seen trace of hyperparameter tuning methods over the course of 128 objective evaluations.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;SigOpt does dramatically better than random search and grid search! For fun, let’s look at the performance of the DQN with the best configuration found by SigOpt. Below are snapshots showing the progress of the sample network’s evolution over the 350 episodes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/bayesian-optimization/ep64.gif&quot; alt=&quot;Figure 3&quot; style=&quot;max-height: 500px;&quot; /&gt;
+&lt;em&gt;&lt;strong&gt;Figure 3:&lt;/strong&gt; Episode 64 of 350. The pole tilts too far, ending the episode.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/bayesian-optimization/ep125.gif&quot; alt=&quot;Figure 4&quot; style=&quot;max-height: 500px;&quot; /&gt;
+&lt;em&gt;&lt;strong&gt;Figure 4:&lt;/strong&gt; Episode 125 of 350. The cart goes too far in one direction, ending the episode.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/bayesian-optimization/ep216.gif&quot; alt=&quot;Figure 5&quot; style=&quot;max-height: 500px;&quot; /&gt;
+&lt;em&gt;&lt;strong&gt;Figure 5:&lt;/strong&gt; Episode 216 of 350. The agent performs well. The video cuts off before the agent fails.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;As shown above, the agent initially has trouble keeping the pole balanced. Eventually, it learns that it can go in the direction that the pole is angled in order to prevent it from falling over immediately. However, the cart would then travel too far in one direction, another failure condition. Finally, the agent learns to move just enough to swing the pole the opposite way so that it is not constantly travelling in a single direction. This is the power of tuning &lt;strong&gt;discount_factor&lt;/strong&gt; effectively!&lt;/p&gt;
+
+&lt;h3 id=&quot;closing-remarks&quot;&gt;Closing Remarks&lt;/h3&gt;
+
+&lt;p&gt;Through hyperparameter tuning with Bayesian optimization, we were able to achieve better performance than otherwise possible with standard search methods. The example code presented in this post is easily adaptable to explore more computationally intensive tasks. We encourage you to try:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Implementing more sophisticated DQN features to improve performance&lt;/li&gt;
+  &lt;li&gt;Tuning a greater number of hyperparameters&lt;/li&gt;
+  &lt;li&gt;Attempting more complicated games from the OpenAI Gym, such as Acrobot-v1 and LunarLander-v0. Our code currently supports games with a discrete action space and a 1-D array of continuous states for the observation space&lt;/li&gt;
+  &lt;li&gt;Tuning a DQN to maximize general performance in multiple environments&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let us know what you try!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This blog post was originally published on the &lt;a href=&quot;https://blog.sigopt.com/posts/using-bayesian-optimization-for-reinforcement-learning#footnotes&quot;&gt;SigOpt blog&lt;/a&gt;. It is co-written by Olivia Kim.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr class=&quot;footnotes-sep&quot; /&gt;
+
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+  &lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;We use the version of the cart-pole problem as described by Barto, Sutton, and Anderson. &lt;a href=&quot;#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;For further insight into the Q-function, as well as reinforcement learning in general, check out &lt;a href=&quot;https://www.nervanasys.com/demystifying-deep-reinforcement-learning/&quot;&gt;this blog post from Nervana&lt;/a&gt; &lt;a href=&quot;#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li id=&quot;fn3&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;The environment does not need to be deterministic for Q-learning to work. The &lt;a href=&quot;http://users.isr.ist.utl.pt/~mtjspaan/readingGroup/ProofQlearning.pdf&quot;&gt;proof that Q-learning converges&lt;/a&gt; takes into account stochastic environments. &lt;a href=&quot;#fnref3&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li id=&quot;fn4&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;DeepMind lists &lt;a href=&quot;https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf#page=10&quot;&gt;the hyperparameters used in their algorithm&lt;/a&gt; to train an agent to play Atari games &lt;a href=&quot;#fnref4&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+   &lt;li id=&quot;fn5&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;The types and ranges of the hyperparameters used in this example:
+     &lt;ul&gt;&lt;li&gt;&lt;strong&gt;minibatch_size&lt;/strong&gt;: integer [10, 500]&lt;/li&gt;&lt;li&gt;&lt;strong&gt;epsilon_decay_steps&lt;/strong&gt;: integer [nn/10,&amp;nbsp;nn] where&amp;nbsp;nn&amp;nbsp;is the number of episodes (for the cart-pole problem, this is set to 350)&lt;/li&gt;&lt;li&gt;&lt;strong&gt;hidden_multiplier&lt;/strong&gt;: integer [5, 100]&lt;/li&gt;&lt;li&gt;&lt;strong&gt;initial_weight_stddev&lt;/strong&gt;: double [0.01, 0.5]&lt;/li&gt;&lt;li&gt;&lt;strong&gt;initial_bias_stddev&lt;/strong&gt;: double [0.0, 0.5]&lt;/li&gt;&lt;li&gt;&lt;strong&gt;log(learning_rate)&lt;/strong&gt;: double [log(0.0001), log(1)]&lt;/li&gt;&lt;li&gt;&lt;strong&gt;discount_factor&lt;/strong&gt;: double [0.5, 0.9999]&lt;/li&gt;&lt;/ul&gt;
+     &lt;a href=&quot;#fnref5&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li id=&quot;fn6&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;We used uniform random search and the vertices of the hypercube for grid search. &lt;a href=&quot;#fnref6&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;</content><author><name>Eric Bai</name></author><category term="tech" /><summary type="html">In this post, we will show you how Bayesian optimization was able to dramatically improve the performance of a reinforcement learning algorithm in an AI challenge. We’ll provide background information, detailed examples, code, and references.</summary></entry><entry><title type="html">My First Android App: The Development Process</title><link href="http://localhost:4000/2015/09/11/my-first-android-app-the-development-process/" rel="alternate" type="text/html" title="My First Android App: The Development Process" /><published>2015-09-11T08:15:00-04:00</published><updated>2015-09-11T08:15:00-04:00</updated><id>http://localhost:4000/2015/09/11/my-first-android-app-the-development-process</id><content type="html" xml:base="http://localhost:4000/2015/09/11/my-first-android-app-the-development-process/">&lt;p&gt;On August 30th, I released &lt;a href=&quot;http://xcerpt.surge.sh/&quot;&gt;Xcerpt&lt;/a&gt;, an Android app for sharing links on Twitter attached with an eye-catching image of some content from the link. It’s particularly useful for sharing quotes from web articles. Xcerpt’s goal is to allow you to show what the link contains, making it easier for you to engage your followers with links.&lt;/p&gt;
+
+&lt;p&gt;I’ve been working on it on-and-off for about two months (and during exams too!), and I wanted to share my development and design process: what technical problems I faced, what design decisions I made, and what I learned along the way.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-decision-to-create-xcerpt&quot;&gt;The decision to create Xcerpt&lt;/h3&gt;
+
+&lt;p&gt;In early June, I started following Anil Dash on Twitter. Anil shares a lot of links using an iOS app called OneShot. When I learned about OneShot, the first thing I did was look up whether it had an Android version (nope), and then looked up if there were any similar apps on the Play Store (nope). The decision to make “OneShot for Android” was pretty straightforward from there.&lt;/p&gt;
+
+&lt;p&gt;Before Xcerpt, I had some beginner experience with Android dev, but they never made it past the “it just barely works” stage of development.&lt;/p&gt;
+
+&lt;p&gt;This project was different. The main appeal was how small the project was. Small meant it was manageable to work on during school. Small meant I could see its development from minimum viable product to fully fleshed out on the Play Store.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-first-step-getting-input-from-theuser&quot;&gt;The first step: getting input from the user&lt;/h3&gt;
+
+&lt;p&gt;My strategy from the get-go was to make progress in very incremental steps. In OneShot, you can highlight text on an image. This involved custom touch events and custom views, stuff I had no idea how to do when I started. Instead, I opted to have the user copy and paste text, or select text in a browser and then use the Share button to send it to my app. Not as fancy, much more finicky, but would get the job done. I called that page PasteActivity, the precursor to Xcerpt’s current InputActivity.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/first-android-app/input_activity.png&quot; alt=&quot;PasteActivity, on the left, would eventually become InputActivity, on the right.&quot; style=&quot;max-width: 500px;&quot; /&gt;
+&lt;em&gt;The Paste page, on the left, would eventually become the Input page, on the right.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;PasteActivity was just an edit field, with Paste and Delete buttons for the user to make common actions in one tap. With this layout, the user could paste some text and then edit it however they like. In the end, I decided this was too much control over the input for the user; the edge cases where the user would have to manually edit text were too unlikely.&lt;/p&gt;
+
+&lt;p&gt;In the current version of Xcerpt, there’s a simple paste button that takes you straight to customizing your image, no other steps involved. Simplicity meant a tradeoff of user input control for speed and intuitiveness.&lt;/p&gt;
+
+&lt;h3 id=&quot;where-everything-happens-the-customization-page&quot;&gt;Where everything happens: The customization page&lt;/h3&gt;
+
+&lt;p&gt;The interface for the customization page includes tabbed pages for colour selection and source selection at the top, with the preview of the image on the bottom. This design did not really change at all throughout development. I briefly tried out an alternate layout where the Colour and Source pages were in pop-ups, in an attempt to give the image preview more screen space, but ultimately decided the extra taps to open pop ups weren’t worth it. While the design was straightforward, this page was challenging due to how much is going on in the background.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/first-android-app/customize_activity.png&quot; alt=&quot;CustomizeActivity, which hardly changed from how it first looked.&quot; style=&quot;max-width: 250px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the user inputs the text they want to share, Xcerpt performs a web search of the text to find its source, then processes the search results to display to the user.&lt;/p&gt;
+
+&lt;p&gt;An early dilemma I faced was that most Search APIs cost a lot of money. I pretty much only had one option, Bing, which provides 5000 free searches per month.&lt;/p&gt;
+
+&lt;p&gt;One unfortunate “gotcha” of Bing’s Search API is the undocumented max URL length of the API call. I had to use up some precious searches to see how long my query could be before an error is thrown. This was complicated by the fact that certain characters become longer when URL-encoded (for example, a space becomes “%20”). I’m still not sure how I should be handling extremely long inputs at this point.&lt;/p&gt;
+
+&lt;p&gt;I pre-process the user’s input a bit before performing a search:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Remove all quotation marks, which Bing would interpret as wanting verbatim search&lt;/li&gt;
+  &lt;li&gt;Replace all whitespace with a regular space, so that there are only single spaces between each search word&lt;/li&gt;
+  &lt;li&gt;Wrap the string (which currently has no quotation marks) in quotation marks so that Bing verbatim searches the entire input for better search results&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Xcerpt queries for the top 3 results to provide as options for the user. This was my first time making an asynchronous task in Android, but it wasn’t too long before it worked. Bing returned some JSON that looked like this for each result:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;__metadata&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;uri&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https:&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\/\/&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;api.datamarket.azure.com&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\/&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Data.ashx&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\/&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Bing&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\/&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;SearchWeb&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\/&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;v1&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\/&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Web?Query='Alphabet will operate as the parent company for a number of smaller companies, including Google, which will continue to focus on Internet products. Android, YouTube, search and ads will remain part of Google Inc.'&amp;amp;$skip=0&amp;amp;$top=1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;WebResult&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ID&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;c08c9672-75ee-4674-88ee-6df31daeb94b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Meet Alphabet - Google's new parent company - Aug. 10, 2015&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Description&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;... as the parent company for a number of smaller ... to focus on Internet products. Android, YouTube, search and ads will remain part of Google Inc.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;DisplayUrl&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;money.cnn.com&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\/&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;2015&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\/&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;08&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\/&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\/&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;technology&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\/&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;alphabet-google&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\/&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;index.html&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http:&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\/\/&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;money.cnn.com&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\/&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;2015&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\/&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;08&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\/&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\/&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;technology&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\/&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;alphabet-google&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\/&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;index.html&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Unfortunately, Bing truncates a title if it’s too long, and I wanted to display the entire title for the user. Additionally, I would prefer to use the &lt;a href=&quot;http://ogp.me/&quot;&gt;OG:Title&lt;/a&gt; if the site had one, since it’s the actual title of the web page’s content. So Bing’s title was junk. I had to write another asynchronous task to fetch the HTML from the site and get its title. Sometimes, the HTML results only contained scripts that would load the full HTML later, meaning I wouldn’t find a title. I used the Bing search result’s title as a fallback in this case. Other than this complication, processing the search results simply involved string parsing of the title, DisplayUrl, and URL, which I stored in an Article object.&lt;/p&gt;
+
+&lt;h3 id=&quot;sharing-totwitter&quot;&gt;Sharing to Twitter&lt;/h3&gt;
+
+&lt;p&gt;Once the user is done customizing, they reach the Share page. I’m pretty proud of the layout of this page; I feel all the information is laid out nicely.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/first-android-app/share_activity.png&quot; alt=&quot;The Share page.&quot; style=&quot;max-width: 250px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I had a love-hate relationship with the Twitter API when integrating it into Xcerpt. Twitter’s Fabric platform was incredibly friendly to use — the Android Studio extension made adding set-up code as simple as possible. However, some features were limited. Fabric didn’t let you post to Twitter from inside the app. Instead, it would try to open up Twitter’s compose tweet page and fill it in. This meant another tap for the user (press Tweet and then… press Tweet again in Twitter). It also couldn’t attach the image if you used a third-party Twitter app. When I emailed Fabric support asking why this limitation existed, they stated:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We require the composer [in the official Twitter app] just so that users are always aware of what apps are posting on their behalf- they get pretty upset otherwise!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It’s a reasonable argument, but I make it as clear as possible in my app when Xcerpt is tweeting something for you. In the end I had to use the unofficial library twitter4j to post the tweet.&lt;/p&gt;
+
+&lt;p&gt;One little feature on this page that OneShot didn’t have: the Tweet button is replaced with a “View on Twitter” button after you’re done tweeting. It streamlines a user’s typical work flow, and it’s a nice touch that OneShot ought to consider adding.&lt;/p&gt;
+
+&lt;h3 id=&quot;adding-screenshots-as-an-inputmethod&quot;&gt;Adding screenshots as an input method&lt;/h3&gt;
+
+&lt;p&gt;I had completely finished the app at this point. It worked and had a polished look. However, I wasn’t completely satisfied — selecting text on a browser can often be annoying and laggy on poorly made mobile sites, and I hated how this aspect of the user workflow, which I couldn’t control, made using Xcerpt a less than ideal experience. So I started integrating the next feature: providing input with screenshots.&lt;/p&gt;
+
+&lt;p&gt;I used Square’s Picasso image library to show a list of screenshots (side note: I love the work Square is doing to create great Android libraries!). For cropping the image, there were plenty of open source image crop tools, but there was a problem with all of them: The crop frame overlay would start out as a small rectangle in the middle of the image. I needed the frame to be as wide as the original image, since the user would mostly be cropping vertically only. I ended up customizing a library for the first time, which was a good learning experience.&lt;/p&gt;
+
+&lt;p&gt;Next, I had to read text from the image. To achieve this, I used Tesseract, an open source optical character recognition library. This was a headache to set-up — getting it working involved compiling C++ code so that it would work on Android. Tesseract also needs a huge file (&amp;gt;20MB) to train it to recognize English, which Xcerpt downloads when the user first opens the app.&lt;/p&gt;
+
+&lt;p&gt;Sometimes, a user will do something I don’t expect them to do: select an image that doesn’t contain text. Tesseract will look for characters in the image and find gibberish. I didn’t want this gibberish to show up in the customization page. The problem, then, is how can I tell if the string I get from Tesseract is not actual text? I came up with a quick solution that worked surprisingly well: find out what percent of the text is alphanumeric. Some quick testing showed that actual paragraphs were always &amp;gt;90% alphanumeric, while strings from images of Google Maps, phone backgrounds, and my snapchats (all gibberish) varied around 55%. I decided to reject anything below 75%.&lt;/p&gt;
+
+&lt;p&gt;At this point I was finally done my first Android app!&lt;/p&gt;
+
+&lt;h3 id=&quot;whats-next&quot;&gt;What’s next?&lt;/h3&gt;
+
+&lt;p&gt;Now that I understand Android and Tesseract better, I hope to integrate some improvements to Xcerpt in the future. The next big feature is to use the screenshot itself in the image, like OneShot. This involves highlighting the text on the image directly. Tesseract can provide the coordinates of each character, word, and line. I need to use these coordinates with custom touch events and an overlay of the image to add highlighting.&lt;/p&gt;
+
+&lt;p&gt;I’m also listening to feedback from Xcerpt users. One commonly suggested feature that I’ll be adding soon is a “Save Image” button, for when the user wants to make the image but tweet it at a later time.&lt;/p&gt;
+
+&lt;h3 id=&quot;special-thanks&quot;&gt;Special thanks&lt;/h3&gt;
+
+&lt;p&gt;I got a lot of help designing Xcerpt thanks to the suggestions and support of Camille Macalalad, Andy Baek, David Fu, and Richard Wong. Thanks everyone!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This post was originally posted on Medium. It has been slightly abridged and edited for formatting.&lt;/em&gt;&lt;/p&gt;</content><author><name>Eric Bai</name></author><category term="tech" /><summary type="html">On August 30th, I released Xcerpt, an Android app for sharing links on Twitter attached with an eye-catching image of some content from the link. It’s particularly useful for sharing quotes from web articles. Xcerpt’s goal is to allow you to show what the link contains, making it easier for you to engage your followers with links.</summary></entry></feed>

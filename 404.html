@@ -1,97 +1,249 @@
+<!--
+This error template is used for all 404 errors, which might occur on your site.
+It's a good idea to keep this template as minimal as possible in terms of both file size and complexity.
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <title>Page not found | Eric Bai</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>404 - Page Not Found</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.edited.css" />
+    <!-- This tag outputs SEO meta+structured data and other important settings -->
+    <meta name="description" content="A blog about building things." />
+    <link rel="shortcut icon" href="http://localhost:4000/assets/images/favicon.png" type="image/png" />
+    <link rel="canonical" href="http://localhost:4000/404.html" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
 
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#da4336">
-    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#da4336">
+     <!--title below is coming from _includes/dynamic_title-->
+    <meta property="og:site_name" content="Eric Bai" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="404 - Page Not Found" />
+    <meta property="og:description" content="A blog about building things." />
+    <meta property="og:url" content="http://localhost:4000/404.html" />
+    <meta property="og:image" content="http://localhost:4000/assets/images/blog-cover.png" />
+    <meta property="article:publisher" content="https://www.facebook.com/TheEricBai" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="404 - Page Not Found" />
+    <meta name="twitter:description" content="A blog about building things." />
+    <meta name="twitter:url" content="http://localhost:4000/" />
+    <meta name="twitter:image" content="http://localhost:4000/assets/images/blog-cover.png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Eric Bai" />
+    <meta name="twitter:site" content="@BaiEric" />
+    <meta name="twitter:creator" content="@BaiEric" />
+    <meta property="og:image:width" content="2000" />
+    <meta property="og:image:height" content="666" />
 
-    <!-- CSS  -->
-    <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
-    <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Eric Bai",
+        "logo": "http://localhost:4000/false"
+    },
+    "url": "http://localhost:4000/404.html",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:4000/assets/images/blog-cover.png",
+        "width": 2000,
+        "height": 666
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:4000/404.html"
+    },
+    "description": "A blog about building things."
+}
+    </script>
+
+    <!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
+    <script type="text/javascript">
+    ghost.init({
+    	clientId: "ghost-frontend",
+    	clientSecret: "f84a07a72b17"
+    });
+    </script> -->
+
+    <meta name="generator" content="Jekyll 3.6.2" />
+    <link rel="alternate" type="application/rss+xml" title="404 - Page Not Found" href="/feed.xml" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
 </head>
-<body id="top" class="scrollspy">
+<body class="error-template">
+    <div class="site-wrapper">
 
-
-<!--Navigation-->
- <div class="navbar-fixed">
-    <nav id="nav_f" class="default_color" role="navigation">
-        <div class="container">
-            <div class="nav-wrapper"><a id="logo-container" href="index.html" class="brand-logo">Eric Bai</a>
+        <header class="site-header outer no-cover">
+            <div class="inner">
+                <nav class="site-nav-center">
+                    
+                        <a class="site-nav-logo" href="/">Eric Bai</a>
+                    
+                </nav>
             </div>
-        </div>
-    </nav>
-</div>
+        </header>
 
-<!--Intro and service-->
-<div id="about" class="section scrollspy">
-    <div class="container">
-        <div class="row">
-            <div  class="col s12 m12 l12 center">
-                <i class="fa fa-5x fa-exclamation-circle"></i>
-                <h2>404: Page not found.</h2>
-                <h5>It's understandable that you can't get enough of this website, but it only has one page. Thanks for exploring, though!</h5>
-                </br>
-                </br>
-                <p>Easter Egg: <a href="https://medium.com/@ericbai">Check out my articles on Medium!</a></p>
+        <main id="site-main" class="site-main outer" role="main">
+            <div class="inner">
+
+                <section class="error-message">
+                    <h1 class="error-code">404</h1>
+                    <p class="error-description">Page not found</p>
+                    <a class="error-link" href="/">Go to the front page →</a>
+                </section>
             </div>
-        </div>
+        </main>
+
+        <!-- get "posts" limit="3" -->
+        <aside class="outer">
+            <div class="inner">
+                <div class="post-feed">
+                    <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
+                    
+
+    
+    
+        <article class="post-card ">
+            
+                <a class="post-card-image-link" href="/2017/05/10/i-made-some-data-visualizations-for-my-girlfriend/">
+                    <div class="post-card-image" style="background-image: url(/assets/images/chatstats/eric-and-camille.jpg)"></div>
+                </a>
+            
+            <div class="post-card-content">
+                <a class="post-card-content-link" href="/2017/05/10/i-made-some-data-visualizations-for-my-girlfriend/">
+                    <header class="post-card-header">
+                        
+                            
+                                
+                                    <span class="post-card-tags">Tech</span>
+                                
+                            
+                        
+
+                        <h2 class="post-card-title">I Made Some Data Visualizations For My Girlfriend</h2>
+                    </header>
+                    <section class="post-card-excerpt">
+                        <p>I just finished my undergrad last month, and it’s really sinking in how special and fleeting the past five years have been. I’m privileged to have had so many unique opportunities and experiences</p>
+                    </section>
+                </a>
+                <!-- <footer class="post-card-meta">
+                    
+                        
+                            
+                            <img class="author-profile-image" src="/assets/images/eric.jpeg" alt="Eric Bai" />
+                            
+                            <span class="post-card-author">
+                                <a href="/author/eric/">Eric Bai</a>
+                            </span>
+                        
+                    
+                </footer> -->
+            </div>
+        </article>
+    
+
+    
+    
+        <article class="post-card ">
+            
+                <a class="post-card-image-link" href="/2016/12/09/using-bayesian-optimization-for-reinforcement-learning/">
+                    <div class="post-card-image" style="background-image: url(/assets/images/bayesian-optimization/artificial-intelligence.jpg)"></div>
+                </a>
+            
+            <div class="post-card-content">
+                <a class="post-card-content-link" href="/2016/12/09/using-bayesian-optimization-for-reinforcement-learning/">
+                    <header class="post-card-header">
+                        
+                            
+                                
+                                    <span class="post-card-tags">Tech</span>
+                                
+                            
+                        
+
+                        <h2 class="post-card-title">Using Bayesian Optimization for Reinforcement Learning</h2>
+                    </header>
+                    <section class="post-card-excerpt">
+                        <p>In this post, we will show you how Bayesian optimization was able to dramatically improve the performance of a reinforcement learning algorithm in an AI challenge. We’ll provide background information, detailed examples, code,</p>
+                    </section>
+                </a>
+                <!-- <footer class="post-card-meta">
+                    
+                        
+                            
+                            <img class="author-profile-image" src="/assets/images/eric.jpeg" alt="Eric Bai" />
+                            
+                            <span class="post-card-author">
+                                <a href="/author/eric/">Eric Bai</a>
+                            </span>
+                        
+                    
+                </footer> -->
+            </div>
+        </article>
+    
+
+    
+    
+        <article class="post-card ">
+            
+                <a class="post-card-image-link" href="/2015/09/11/my-first-android-app-the-development-process/">
+                    <div class="post-card-image" style="background-image: url(/assets/images/first-android-app/xcerpt-cover.png)"></div>
+                </a>
+            
+            <div class="post-card-content">
+                <a class="post-card-content-link" href="/2015/09/11/my-first-android-app-the-development-process/">
+                    <header class="post-card-header">
+                        
+                            
+                                
+                                    <span class="post-card-tags">Tech</span>
+                                
+                            
+                        
+
+                        <h2 class="post-card-title">My First Android App: The Development Process</h2>
+                    </header>
+                    <section class="post-card-excerpt">
+                        <p>On August 30th, I released Xcerpt, an Android app for sharing links on Twitter attached with an eye-catching image of some content from the link. It’s particularly useful for sharing quotes from web</p>
+                    </section>
+                </a>
+                <!-- <footer class="post-card-meta">
+                    
+                        
+                            
+                            <img class="author-profile-image" src="/assets/images/eric.jpeg" alt="Eric Bai" />
+                            
+                            <span class="post-card-author">
+                                <a href="/author/eric/">Eric Bai</a>
+                            </span>
+                        
+                    
+                </footer> -->
+            </div>
+        </article>
+    
+
+
+                </div>
+            </div>
+        </aside>
+        <!-- /get -->
+
     </div>
-</div>
-
-<!--Footer-->
-<footer id="contact" class="page-footer default_color scrollspy">
-    <div class="container">
-        <div class="row">
-            <div class="col l3 s6 m3">
-                <a class="white-text" href="https://github.com/baieric">
-                    <i class="small fa fa-github white-text"></i> Github
-                </a>
-            </div>
-
-            <div class="col l3 s6 m3">
-                <a class="white-text" href="https://www.linkedin.com/in/baieric">
-                    <i class="small fa fa-linkedin white-text"></i> LinkedIn
-                </a>
-            </div>
-
-            <div class="col l3 s6 m3">
-                <a class="white-text" href="https://twitter.com/baieric">
-                    <i class="small fa fa-twitter white-text"></i> Twitter
-                </a>
-            </div>
-
-            <div class="col l3 s6 m3">
-                <a class="white-text" href="mailto:ebai@uwaterloo.ca">
-                    <i class="small fa fa-envelope white-text"></i> Email
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="footer-copyright default_color">
-    </div>
-</footer>
-
-    <!--  Scripts-->
-    <script src="min/plugin-min.js"></script>
-    <script src="min/custom-min.js"></script>
-
-    </body>
+</body>
 </html>
+

@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Document Settings -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Base Meta -->
+    <!-- dynamically fixing the title for tag/author pages -->
+
+
+
+    <title>Using Bayesian Optimization for Reinforcement Learning</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles'n'Scripts -->
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.edited.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <style>.hljs { background: none; }</style>
+
+    <!-- This tag outputs SEO meta+structured data and other important settings -->
+    <meta name="description" content="A blog about building things." />
+    <link rel="shortcut icon" href="http://localhost:4000/assets/images/favicon.png" type="image/png" />
+    <link rel="canonical" href="http://localhost:4000/2016/12/09/using-bayesian-optimization-for-reinforcement-learning/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+     <!--title below is coming from _includes/dynamic_title-->
+    <meta property="og:site_name" content="Eric Bai" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Using Bayesian Optimization for Reinforcement Learning" />
+    <meta property="og:description" content="In this post, we will show you how Bayesian optimization was able to dramatically improve the performance of a reinforcement learning algorithm in an AI challenge. We’ll provide background information, detailed examples, code, and references. Background Reinforcement learning is a field of machine learning in which a software agent is" />
+    <meta property="og:url" content="http://localhost:4000/2016/12/09/using-bayesian-optimization-for-reinforcement-learning/" />
+    <meta property="og:image" content="http://localhost:4000/assets/images/bayesian-optimization/artificial-intelligence.jpg" />
+    <meta property="article:publisher" content="https://www.facebook.com/TheEricBai" />
+    <meta property="article:author" content="https://www.facebook.com/TheEricBai" />
+    <meta property="article:published_time" content="2016-12-09T03:00:00-05:00" />
+    <meta property="article:modified_time" content="2016-12-09T03:00:00-05:00" />
+    <meta property="article:tag" content="Tech" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Using Bayesian Optimization for Reinforcement Learning" />
+    <meta name="twitter:description" content="In this post, we will show you how Bayesian optimization was able to dramatically improve the performance of a reinforcement learning algorithm in an AI challenge. We’ll provide background information, detailed examples, code, and references. Background Reinforcement learning is a field of machine learning in which a software agent is" />
+    <meta name="twitter:url" content="http://localhost:4000/" />
+    <meta name="twitter:image" content="http://localhost:4000/assets/images/bayesian-optimization/artificial-intelligence.jpg" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Eric Bai" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Tech" />
+    <meta name="twitter:site" content="@BaiEric" />
+    <meta name="twitter:creator" content="@BaiEric" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="933" />
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Eric Bai",
+        "logo": "http://localhost:4000/false"
+    },
+    "url": "http://localhost:4000/2016/12/09/using-bayesian-optimization-for-reinforcement-learning/",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:4000/assets/images/bayesian-optimization/artificial-intelligence.jpg",
+        "width": 2000,
+        "height": 666
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:4000/2016/12/09/using-bayesian-optimization-for-reinforcement-learning/"
+    },
+    "description": "In this post, we will show you how Bayesian optimization was able to dramatically improve the performance of a reinforcement learning algorithm in an AI challenge. We’ll provide background information, detailed examples, code, and references. Background Reinforcement learning is a field of machine learning in which a software agent is"
+}
+    </script>
+
+    <!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
+    <script type="text/javascript">
+    ghost.init({
+    	clientId: "ghost-frontend",
+    	clientSecret: "f84a07a72b17"
+    });
+    </script> -->
+
+    <meta name="generator" content="Jekyll 3.6.2" />
+    <link rel="alternate" type="application/rss+xml" title="Using Bayesian Optimization for Reinforcement Learning" href="/feed.xml" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+
+</head>
+<body class="post-template">
+
+    <div class="site-wrapper">
+        <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
+        <!-- default -->
+
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+        
+            
+                <a class="site-nav-logo" href="http://localhost:4000">Eric Bai</a>
+            
+        
+        
+            <ul class="nav" role="menu">
+    <li class="nav-about" role="menuitem"><a href="/about/">About Eric</a></li>
+</ul>
+
+        
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+            
+                <a class="social-link social-link-fb" href="https://facebook.com/TheEricBai" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+</a>
+            
+            
+                <a class="social-link social-link-tw" href="https://twitter.com/BaiEric" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+</a>
+            
+        </div>
+        
+    </div>
+</nav>
+
+    </div>
+</header>
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article class="post-full post ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime=" 9 December 2016"> 9 December 2016</time>
+                    
+                        <span class="date-divider">/</span>
+                        
+                            
+                               <a href='/tag/tech/'>TECH</a>
+                            
+                        
+                    
+                </section>
+                <h1 class="post-full-title">Using Bayesian Optimization for Reinforcement Learning</h1>
+            </header>
+
+            
+            <figure class="post-full-image" style="background-image: url(/assets/images/bayesian-optimization/artificial-intelligence.jpg)">
+            </figure>
+            
+
+            <section class="post-full-content">
+                <div class="kg-card-markdown">
+                    <p>In this post, we will show you how <a href="https://static.sigopt.com/2d66b84dcdbbd7fffad087f58b67a585eb89444c/pdf/SigOpt_Bayesian_Optimization_Primer.pdf">Bayesian optimization</a> was able to dramatically improve the performance of a reinforcement learning algorithm in an AI challenge. We’ll provide background information, detailed examples, code, and references.</p>
+
+<h3 id="background">Background</h3>
+
+<p>Reinforcement learning is a field of machine learning in which a software agent is taught to maximize its acquisition of rewards in a given environment. Observations of the state of the environment are used by the agent to make decisions about which action it should perform in order to maximize its reward.</p>
+
+<p>Reinforcement learning has recently garnered significant news coverage as a result of innovations in deep Q-networks (DQNs) by DeepMind Technologies. Through deep reinforcement learning, DeepMind was able to teach computers to <a href="http://www.nature.com/nature/journal/v518/n7540/full/nature14236.html">play Atari games better than humans</a>, as well as <a href="https://en.wikipedia.org/wiki/AlphaGo">defeat one of the top Go players in the world</a>.</p>
+
+<p>As noted in <a href="https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf#page=10">DeepMind’s paper</a>, an “informal search” for hyperparameter values was conducted in order to avoid the high computational cost of performing grid search. Because the complexity of grid search grows exponentially with the number of parameters being tuned, experts often spend considerable time and resources performing these “informal searches.” This may lead to <a href="https://www.nervanasys.com/sigopt/">suboptimal performance</a>, or can lead to the systems not being tuned at all. Bayesian optimization represents a way to efficiently optimize these high dimensional, time consuming, and expensive problems.</p>
+
+<p>We will demonstrate the power of hyperparameter optimization by using <a href="https://start.sigopt.com/">SigOpt</a>’s ensemble of state-of-the-art Bayesian optimization techniques to tune a DQN. We’ll show how this approach finds better hyperparameter values much faster than traditional methods such as grid and random search, without requiring expert time spent doing “informal” hand tuning of parameters. The DQN under consideration will be used to solve a classic learning control problem called the Cart-Pole problem <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>. In this problem, a pole must be balanced upright on a cart for as long as possible. To simulate this environment, we will use <a href="https://gym.openai.com/">OpenAI’s Gym library</a>.</p>
+
+<p><img src="/assets/images/bayesian-optimization/cart-pole.gif" alt="Figure 1" style="max-height: 500px;" />
+<em>‍<strong>Figure 1:</strong> A rendered episode from the OpenAI Gym’s Cart-Pole environment</em></p>
+
+<p>The OpenAI Gym provides a common interface to various reinforcement learning environments; the code written for this post (<a href="https://github.com/sigopt/sigopt-examples/tree/master/reinforcement-learning">available on Github</a>) can be easily modified to solve other learning control problems from the Gym’s environments.</p>
+
+<h3 id="the-environment">The Environment</h3>
+
+<p>In OpenAI’s simulation of the cart-pole problem, the software agent controls the movement of the cart, earning a <strong>reward</strong> of +1 for each timestep until the terminating step. A terminating step occurs when the pole is more than 15 degrees from vertical or if the cart has moved more than 2.4 units from the center. The agent receives 4 continuous values that make up the <strong>state</strong> of the environment at each timestep: the position of the cart on the track, the angle of the pole, the cart velocity, and the rate of change of the angle. The agent’s only possible <strong>actions</strong> at each timestep are to push the cart to the left or right by applying a force of either -1 or +1, respectively. A series of states and actions, ending in a terminating state, is known as an <strong>episode</strong>. The agent will have no prior concept about the meaning of the values that represent these states and actions.</p>
+
+<h3 id="q-learning">Q-learning</h3>
+
+<p>Q-learning is a reinforcement learning technique that develops an action-value function (also known as the Q-function) that returns an expected utility of an action given a current state. Thus, the policy of the agent is to take the action with the highest expected utility.</p>
+
+<p>Assume there exists an all-knowing Q-function that always selects the best action for a given state. Through Q-learning, we construct an approximation of this all-knowing function by continually updating the approximation using the results of previously attempted actions. The Q-learning algorithm updates the Q-function iteratively, as is explained below; initial Q-values are arbitrarily selected. An existing expected utility is updated when given new information using the following algorithm<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></p>
+
+<script type="math/tex; mode=display">Q_{t+1}(s_t, a_t) = Q_t(s_t, a_t) + \alpha(r_{t+1} + \gamma \max_a( Q_t(s_{t+1}, a)) - Q_t(s_t, a_t)).</script>
+
+<ul>
+  <li>$a_t$ is the action executed in the state $s_t$.</li>
+  <li>$s_{t+1}$ is the new state observed. In a deterministic environment<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>, it is a function of $s_t$ and $a_t$.</li>
+  <li>$r_{t+1}$ is the immediate reward gained. It is a function of $s_t$, $a_t$, and $s_{t+1}$.</li>
+  <li>$\alpha$ is the constant learning rate; how much the new information is weighted relative to the old information.</li>
+  <li>$\gamma$ is the constant discount factor that determines how much long-term rewards should be valued.</li>
+</ul>
+
+<p>In its simplest form, the Q-function can be implemented as a table mapping all possible combinations of states and actions to expected utility values. Since this is infeasible in environments with large or continuous action and observation spaces, we use a neural net to approximate this lookup table. As the agent continues act within the environment, the estimated Q-function is updated to better approximate the true Q-function via <a href="https://en.wikipedia.org/wiki/Backpropagation">backpropagation</a>.</p>
+
+<h3 id="the-objective-metric">The Objective Metric</h3>
+
+<p>To properly tune the hyperparameters of our DQN, we have to select an appropriate objective metric value for SigOpt to optimize. While we are primarily concerned with maximizing the agent’s reward acquisition, we must also consider the DQN’s stability and efficiency. To ensure our agent’s training is efficient, we will train the DQN over the course of only 350 episodes and record the total reward accumulated for each episode. We use a rolling average of the reward for each set of 100 consecutive episodes (episodes 1 to 100, 2 to 101, etc.) and take the maximum for our objective metric. This helps stabilize the agent’s learning while also giving a robust metric for the overall quality of the agent with respect to the reward.</p>
+
+<h3 id="tunable-parameters-of-reinforcement-learning-via-deep-q-networks">Tunable Parameters of Reinforcement Learning Via Deep Q-Networks</h3>
+
+<p>While there are many tunable hyperparameters in the realm of reinforcement learning and deep Q-networks<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup>, for this blog post the following 7 parameters<sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup> were selected:</p>
+
+<p><strong>minibatch_size:</strong> The number of training cases used to update the Q-network at each training step. These training cases, or minibatches, are randomly selected from the agent’s replay memory. In our implementation, the replay memory contains the last 1,000,000 transitions in the environment.</p>
+
+<p><strong>epsilon_decay_steps:</strong> The number of episodes required for the initial $\epsilon$ value to linearly decay until it reaches its end value. $\epsilon$ is the probability that our agent takes a random action, which decreases over time to balance exploration and exploitation. The upper bound for this parameter depends on the total number of episodes run. Initially, $\epsilon$ is 1, and it will decrease until it is 0.1, as suggested in DeepMind’s paper.</p>
+
+<p><strong>hidden_multiplier:</strong> Determines the number of nodes in the hidden layers of the Q-network. We set the number of nodes by multiplying this value by the size of the observation space. We formulated this parameter in this way to make it easier to switch to environments with different observation spaces.</p>
+
+<p><strong>initial_weight_stddev</strong> and <strong>intial_bias_stddev:</strong> Both the Q-network’s weights and biases are randomly initialized from normal distributions with a mean of 0. The standard deviations of these distributions affect the rate of convergence of the network.</p>
+
+<p><strong>learning_rate:</strong> Regulates the speed and accuracy of the Q-network by controlling the rate at which the weights of the network are updated. We look at this parameter on the logarithmic scale. This is equivalent to $\alpha$ in the Q-learning formula.</p>
+
+<p><strong>discount_factor:</strong> Determines the importance of future rewards to the agent. A value closer to zero will place more importance on short-term rewards, and a value closer to 1 will place more importance on long-term rewards. This is equivalent to $\gamma$ in the Q-learning formula.</p>
+
+<p>Other good hyperparameters to consider tuning are the minimum epsilon value, the replay memory size, and the number of episodes of pure exploration (<strong>_final_epsilon</strong>, <strong>_replay_memory_size</strong>, and <strong>_episodes_pure_exploration</strong> in the Agent class).</p>
+
+<h3 id="the-code">The Code</h3>
+
+<p><a href="https://github.com/sigopt/sigopt-examples/tree/master/reinforcement-learning">The code is available on Github</a>. The only dependencies required to run this example are NumPy, Gym, TensorFlow, and SigOpt. If you don’t have a SigOpt account, you can <a href="https://sigopt.com/signup">sign up for a free SigOpt trial</a>. SigOpt also has <a href="https://start.sigopt.com/edu">a free plan available for academic users</a>.</p>
+
+<p>Running this code can be computationally intensive. If possible, try running this example on a CPU optimized machine. On a c4.4xlarge AWS instance, the entire example can take up to 5 hours to run. If you are running the code on an AWS instance, you can try using the SigOpt Community AMI that includes several pre-installed machine learning libraries.</p>
+
+<h3 id="results">Results</h3>
+
+<p>We compared the results of SigOpt’s Bayesian optimization to two standard hyperparameter tuning methods: grid search and random search<sup class="footnote-ref"><a href="#fn6" id="fnref6">[6]</a></sup>. 128 objective evaluations for each optimization method were run, and we took the median of 5 runs.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>SigOpt</th>
+      <th>Random Search</th>
+      <th>Grid Search</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Best Found</td>
+      <td>847.19</td>
+      <td>569.93</td>
+      <td>194.62</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em><strong>Table 1:</strong> SigOpt outperforms random search and grid search.</em></p>
+
+<p><img src="/assets/images/bayesian-optimization/best-trace.png" alt="Figure 2" style="max-height: 500px;" />
+<em><strong>Figure 2:</strong> The best seen trace of hyperparameter tuning methods over the course of 128 objective evaluations.</em></p>
+
+<p>SigOpt does dramatically better than random search and grid search! For fun, let’s look at the performance of the DQN with the best configuration found by SigOpt. Below are snapshots showing the progress of the sample network’s evolution over the 350 episodes.</p>
+
+<p><img src="/assets/images/bayesian-optimization/ep64.gif" alt="Figure 3" style="max-height: 500px;" />
+<em><strong>Figure 3:</strong> Episode 64 of 350. The pole tilts too far, ending the episode.</em></p>
+
+<p><img src="/assets/images/bayesian-optimization/ep125.gif" alt="Figure 4" style="max-height: 500px;" />
+<em><strong>Figure 4:</strong> Episode 125 of 350. The cart goes too far in one direction, ending the episode.</em></p>
+
+<p><img src="/assets/images/bayesian-optimization/ep216.gif" alt="Figure 5" style="max-height: 500px;" />
+<em><strong>Figure 5:</strong> Episode 216 of 350. The agent performs well. The video cuts off before the agent fails.</em></p>
+
+<p>As shown above, the agent initially has trouble keeping the pole balanced. Eventually, it learns that it can go in the direction that the pole is angled in order to prevent it from falling over immediately. However, the cart would then travel too far in one direction, another failure condition. Finally, the agent learns to move just enough to swing the pole the opposite way so that it is not constantly travelling in a single direction. This is the power of tuning <strong>discount_factor</strong> effectively!</p>
+
+<h3 id="closing-remarks">Closing Remarks</h3>
+
+<p>Through hyperparameter tuning with Bayesian optimization, we were able to achieve better performance than otherwise possible with standard search methods. The example code presented in this post is easily adaptable to explore more computationally intensive tasks. We encourage you to try:</p>
+
+<ul>
+  <li>Implementing more sophisticated DQN features to improve performance</li>
+  <li>Tuning a greater number of hyperparameters</li>
+  <li>Attempting more complicated games from the OpenAI Gym, such as Acrobot-v1 and LunarLander-v0. Our code currently supports games with a discrete action space and a 1-D array of continuous states for the observation space</li>
+  <li>Tuning a DQN to maximize general performance in multiple environments</li>
+</ul>
+
+<p>Let us know what you try!</p>
+
+<p><em>This blog post was originally published on the <a href="https://blog.sigopt.com/posts/using-bayesian-optimization-for-reinforcement-learning#footnotes">SigOpt blog</a>. It is co-written by Olivia Kim.</em></p>
+
+<hr class="footnotes-sep" />
+
+<section class="footnotes">
+<ol class="footnotes-list">
+  <li id="fn1" class="footnote-item"><p>We use the version of the cart-pole problem as described by Barto, Sutton, and Anderson. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+  </li>
+  <li id="fn2" class="footnote-item"><p>For further insight into the Q-function, as well as reinforcement learning in general, check out <a href="https://www.nervanasys.com/demystifying-deep-reinforcement-learning/">this blog post from Nervana</a> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+  </li>
+  <li id="fn3" class="footnote-item"><p>The environment does not need to be deterministic for Q-learning to work. The <a href="http://users.isr.ist.utl.pt/~mtjspaan/readingGroup/ProofQlearning.pdf">proof that Q-learning converges</a> takes into account stochastic environments. <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+  </li>
+  <li id="fn4" class="footnote-item"><p>DeepMind lists <a href="https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf#page=10">the hyperparameters used in their algorithm</a> to train an agent to play Atari games <a href="#fnref4" class="footnote-backref">↩︎</a></p>
+  </li>
+   <li id="fn5" class="footnote-item"><p>The types and ranges of the hyperparameters used in this example:
+     <ul><li><strong>minibatch_size</strong>: integer [10, 500]</li><li><strong>epsilon_decay_steps</strong>: integer [nn/10,&nbsp;nn] where&nbsp;nn&nbsp;is the number of episodes (for the cart-pole problem, this is set to 350)</li><li><strong>hidden_multiplier</strong>: integer [5, 100]</li><li><strong>initial_weight_stddev</strong>: double [0.01, 0.5]</li><li><strong>initial_bias_stddev</strong>: double [0.0, 0.5]</li><li><strong>log(learning_rate)</strong>: double [log(0.0001), log(1)]</li><li><strong>discount_factor</strong>: double [0.5, 0.9999]</li></ul>
+     <a href="#fnref5" class="footnote-backref">↩︎</a></p>
+  </li>
+  <li id="fn6" class="footnote-item"><p>We used uniform random search and the vertices of the hypercube for grid search. <a href="#fnref6" class="footnote-backref">↩︎</a></p>
+  </li>
+</ol>
+</section>
+
+                </div>
+            </section>
+
+            <!-- Email subscribe form at the bottom of the page -->
+            
+
+            <footer class="post-full-footer">
+                <!-- Everything inside the #author tags pulls data from the author -->
+                <!-- #author-->
+                
+                    
+                        <section class="author-card">
+                            
+                                <img class="author-profile-image" src="/assets/images/eric.jpeg" alt="eric" />
+                            
+                            <section class="author-card-content">
+                                <h4 class="author-card-name"><a href="/author/eric">Eric Bai</a></h4>
+                                
+                                    <p>Eric enjoys turning ideas into reality using technology. He's especially interested in software for social good.</p>
+                                
+                            </section>
+                        </section>
+                        <div class="post-full-footer-right">
+                            <a class="author-card-button" href="/about">Find out more</a>
+                        </div>
+                    
+                
+                <!-- /author  -->
+            </footer>
+
+            <!-- If you use Disqus comments, just uncomment this block.
+            The only thing you need to change is "test-apkdzgmqhj" - which
+            should be replaced with your own Disqus site-id. -->
+            
+                <section class="post-full-comments">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        var disqus_config = function () {
+                            this.page.url = 'http://localhost:4000/';
+                            this.page.identifier = 'Eric Bai';
+                        };
+                        (function() {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://ericbai-co.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                </section>
+            
+
+        </article>
+
+    </div>
+</main>
+
+<!-- Links to Previous/Next posts -->
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+                
+                
+                
+                
+                    <article class="read-next-card"
+                        
+                            style="background-image: url(/assets/images/blog-cover.png)"
+                        
+                    >
+                        <header class="read-next-card-header">
+                            <small class="read-next-card-header-sitetitle">&mdash; Eric Bai &mdash;</small>
+                            
+                                <h3 class="read-next-card-header-title"><a href="/tag/tech/">Tech</a></h3>
+                            
+                        </header>
+                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+</div>
+                        <div class="read-next-card-content">
+                            <ul>
+                                
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/2017/05/10/i-made-some-data-visualizations-for-my-girlfriend/">I Made Some Data Visualizations For My Girlfriend</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/2015/09/11/my-first-android-app-the-development-process/">My First Android App: The Development Process</a></li>
+                                        
+                                    
+                                  
+                                
+                            </ul>
+                        </div>
+                        <footer class="read-next-card-footer">
+                            <a href="/tag/tech/">
+                                
+                                    See all 2 posts  →
+                                
+                            </a>
+                        </footer>
+                    </article>
+                
+            
+
+            <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/2017/05/10/i-made-some-data-visualizations-for-my-girlfriend/">
+                <div class="post-card-image" style="background-image: url(/assets/images/chatstats/eric-and-camille.jpg)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/2017/05/10/i-made-some-data-visualizations-for-my-girlfriend/">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Tech</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">I Made Some Data Visualizations For My Girlfriend</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    <p>I just finished my undergrad last month, and it's really sinking in how special and fleeting the past five years have been. I'm privileged to have had so many unique opportunities and experiences</p>
+                </section>
+            </a>
+            <!-- <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/images/eric.jpeg" alt="Eric Bai" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/eric/">Eric Bai</a>
+                        </span>
+                    
+                
+            </footer> -->
+        </div>
+    </article>
+
+            
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/2015/09/11/my-first-android-app-the-development-process/">
+                <div class="post-card-image" style="background-image: url(/assets/images/first-android-app/xcerpt-cover.png)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/2015/09/11/my-first-android-app-the-development-process/">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Tech</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">My First Android App: The Development Process</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    <p>On August 30th, I released Xcerpt, an Android app for sharing links on Twitter attached with an eye-catching image of some content from the link. It’s particularly useful for sharing quotes from web</p>
+                </section>
+            </a>
+            <!-- <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/images/eric.jpeg" alt="Eric Bai" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/eric/">Eric Bai</a>
+                        </span>
+                    
+                
+            </footer> -->
+        </div>
+    </article>
+
+            
+
+        </div>
+    </div>
+</aside>
+
+<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="http://localhost:4000/">
+            
+                <img src="/assets/images/favicon.png" alt="Eric Bai icon" />
+            
+            <span>Eric Bai</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Using Bayesian Optimization for Reinforcement Learning</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Using+Bayesian+Optimization+for+Reinforcement+Learning&amp;url=https://ericbai.co/2016/12/09/using-bayesian-optimization-for-reinforcement-learning/"
+            onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+
+        </a>
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://ericbai.co/2016/12/09/using-bayesian-optimization-for-reinforcement-learning/"
+            onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+
+        </a>
+    </div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+
+
+        <!-- Previous/next page links - displayed on every page -->
+        
+
+        <!-- The footer at the very bottom of the screen -->
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="http://localhost:4000/">Eric Bai</a> &copy; 2018</section>
+                <nav class="site-footer-nav">
+                    <a href="/">Latest Posts</a>
+                    <a href="https://facebook.com/TheEricBai" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://twitter.com/BaiEric" target="_blank" rel="noopener">Twitter</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- The big email subscribe modal content -->
+    
+
+    <!-- highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
+    <script>$(document).ready(function() {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    });</script>
+
+    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script>
+
+
+    <!-- Paginator increased to "infinit" in _config.yml -->
+    <!-- if paginator.posts  -->
+    <!-- <script>
+        var maxPages = parseInt('');
+    </script>
+    <script src="/assets/js/infinitescroll.js"></script> -->
+    <!-- /endif -->
+
+    
+
+
+    <!-- Add Google Analytics  -->
+    <!-- Google Analytics Tracking code -->
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-118889659-1', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+
+    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+    
+        <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+
+    
+
+    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+    <!-- ghost_foot -->
+
+</body>
+</html>
