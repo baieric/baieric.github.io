@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>http://ericbai.co/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://ericbai.co/2015-09-11-my-first-android-app-the-development-process/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://ericbai.co/2016-12-09-using-bayesian-optimization-for-reinforcement-learning/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://ericbai.co/2018-05-10-i-made-some-data-visualizations-for-my-girlfriend/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://ericbai.co/2018-06-02-how-gdpr-helped-make-my-side-project-possible/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://ericbai.co/2018-07-23-twenty-photos-in-peru/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://ericbai.co/2019-04-19-favourite-spots-in-nyc.markdown/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://ericbai.co/2019-07-13-review-the-farewell/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://ericbai.co/2019-07-20-university-of-waterloo-pro-tips/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://ericbai.co/2019-10-05-review-parasite/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://ericbai.co/tags/projects/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://ericbai.co/tags/places/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://ericbai.co/tags/film/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://ericbai.co/tags/guides/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://ericbai.co/author/eric/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://ericbai.co/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+</urlset>
