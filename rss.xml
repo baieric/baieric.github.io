@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Eric Bai]]></title><description><![CDATA[A personal blog about technology and art.]]></description><link>https://ericbai.co</link><image><url>https://ericbai.co/icons/icon-512x512.png</url><title>Eric Bai</title><link>https://ericbai.co</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 May 2020 14:00:46 GMT</lastBuildDate><atom:link href="https://ericbai.co/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Midsommar and The Farewell: Bringing Eastern Values to Western Film]]></title><description><![CDATA[For an example of how the cultural zeitgeist may be shifting, let’s look at two American films released in 2019.]]></description><link>https://ericbai.co/midsommar-and-the-farewell</link><guid isPermaLink="false">https://ericbai.co/midsommar-and-the-farewell</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Sun, 05 Apr 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Eric Bai]]></title><description><![CDATA[A personal blog about technology and art.]]></description><link>https://ericbai.co</link><image><url>https://ericbai.co/icons/icon-512x512.png</url><title>Eric Bai</title><link>https://ericbai.co</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 May 2020 17:44:53 GMT</lastBuildDate><atom:link href="https://ericbai.co/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Midsommar and The Farewell: Bringing Eastern Values to Western Film]]></title><description><![CDATA[For an example of how the cultural zeitgeist may be shifting, let’s look at two American films released in 2019.]]></description><link>https://ericbai.co/midsommar-and-the-farewell</link><guid isPermaLink="false">https://ericbai.co/midsommar-and-the-farewell</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Sun, 05 Apr 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i &lt; sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
@@ -805,6 +805,258 @@ return function MDXContent(_ref) {
     &quot;target&quot;: &quot;_blank&quot;,
     &quot;rel&quot;: &quot;noreferrer&quot;
   }), &quot;Letterboxd&quot;), &quot;.&quot;)));
+}
+;
+MDXContent.isMDXComponent = true;</content:encoded></item><item><title><![CDATA[Favourite Spots in NYC]]></title><description><![CDATA[There's still so many neighbourhoods I need to explore more, and I'll keep updating this list as I do.]]></description><link>https://ericbai.co/favourite-spots-in-nyc</link><guid isPermaLink="false">https://ericbai.co/favourite-spots-in-nyc</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Mon, 29 Apr 2019 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i &lt; sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i &lt; sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; target[key] = source[key]; } return target; }
+
+/* @jsx mdx */
+var _frontmatter = {
+  &quot;hero&quot;: &quot;img/nyc/nyc.jpg&quot;,
+  &quot;title&quot;: &quot;Favourite Spots in NYC&quot;,
+  &quot;date&quot;: &quot;2019-04-29T00:00:00.000Z&quot;,
+  &quot;author&quot;: &quot;Eric Bai&quot;,
+  &quot;excerpt&quot;: &quot;There&apos;s still so many neighbourhoods I need to explore more, and I&apos;ll keep updating this list as I do.&quot;
+};
+
+var makeShortcode = function makeShortcode(name) {
+  return function MDXDefaultShortcode(props) {
+    console.warn(&quot;Component &quot; + name + &quot; was not imported, exported, or provided by MDXProvider as global scope&quot;);
+    return mdx(&quot;div&quot;, props);
+  };
+};
+
+var layoutProps = {
+  _frontmatter: _frontmatter
+};
+var MDXLayout = &quot;wrapper&quot;;
+return function MDXContent(_ref) {
+  var components = _ref.components,
+      props = _objectWithoutProperties(_ref, [&quot;components&quot;]);
+
+  return mdx(MDXLayout, _extends({}, layoutProps, props, {
+    components: components,
+    mdxType: &quot;MDXLayout&quot;
+  }), mdx(&quot;p&quot;, null, &quot;There\u2019s still so many neighbourhoods I need to explore more, and I\u2019ll keep updating this list as I do.&quot;), mdx(&quot;p&quot;, null, &quot;Bolded items are my most-favs. Asterisk means the place has multiple locations.&quot;), mdx(&quot;p&quot;, null, &quot;Last updated July 20 2019.&quot;), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;upper-manhattan&quot;
+  }, &quot;Upper Manhattan&quot;), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;places&quot;
+  }, &quot;Places&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;strong&quot;, {
+    parentName: &quot;li&quot;
+  }, &quot;The Met Cloisters&quot;))), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;upper-west-side--upper-east-side&quot;
+  }, &quot;Upper West Side / Upper East Side&quot;), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;food&quot;
+  }, &quot;Food&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;strong&quot;, {
+    parentName: &quot;li&quot;
+  }, &quot;Sushi Yasaka&quot;), &quot; (cheap omakase!)&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;strong&quot;, {
+    parentName: &quot;li&quot;
+  }, &quot;Sala Thai&quot;))), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;places-1&quot;
+  }, &quot;Places&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Watch a movie at Lincoln Center (&quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;li&quot;
+  }, &quot;NYFF&quot;), &quot; is in autumn)&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;The Frick&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;The Met&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;strong&quot;, {
+    parentName: &quot;li&quot;
+  }, &quot;Cooper Hewitt&quot;)), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Guggenheim&quot;)), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;hells-kitchen&quot;
+  }, &quot;Hell\u2019s Kitchen&quot;), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;food-1&quot;
+  }, &quot;Food&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Totto Ramen* (go to the one on 10th Ave imo)&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;La Pulperia&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Amy\u2019s Bread* (go for breakfast when it\u2019s most fresh)&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Pure Thai Cookhouse&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Bibble and Sip (matcha cream puff!)&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Empanada Mama&quot;)), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;midtown--midtown-east&quot;
+  }, &quot;Midtown / Midtown East&quot;), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;food-2&quot;
+  }, &quot;Food&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Souvlaki GR* (that lamb pita tho)&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;strong&quot;, {
+    parentName: &quot;li&quot;
+  }, &quot;Keen\u2019s Steakhouse&quot;), &quot; ($$$ mutton chops)&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;The Smith*&quot;)), mdx(&quot;p&quot;, null, &quot;Go further east for less touristy spots.&quot;), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;places-2&quot;
+  }, &quot;Places&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;New York Public Library&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;strong&quot;, {
+    parentName: &quot;li&quot;
+  }, &quot;Kinokuniya&quot;)), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Nintendo NY&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;strong&quot;, {
+    parentName: &quot;li&quot;
+  }, &quot;MoMA&quot;)), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;strong&quot;, {
+    parentName: &quot;li&quot;
+  }, &quot;Watch a Broadway show&quot;))), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;chelsea--flatiron&quot;
+  }, &quot;Chelsea / Flatiron&quot;), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;food-3&quot;
+  }, &quot;Food&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Los Tacos #1*&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Brooklyn Bagel&quot;)), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;places-3&quot;
+  }, &quot;Places&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;The High Line&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Sleep No More (you can go to the earliest show and just stay there when the show repeats, stay as long as you want)&quot;)), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;korea-town&quot;
+  }, &quot;Korea Town&quot;), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;foodbars&quot;
+  }, &quot;Food/Bars&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;BCD Tofu House&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Jongro BBQ (plenty of good KBBQ options though)&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Pocha&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Barnjoo*&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Gammeeok&quot;)), mdx(&quot;p&quot;, null, &quot;Book that karaoke EARLY.&quot;), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;west-village--greenwich-village&quot;
+  }, &quot;West Village / Greenwich Village&quot;), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;foodbars-1&quot;
+  }, &quot;Food/Bars&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Amelie Wine Bar&quot;)), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;places-4&quot;
+  }, &quot;Places&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Whitney Museum&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Washington Square Park&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;strong&quot;, {
+    parentName: &quot;li&quot;
+  }, &quot;IFC Center&quot;), &quot; (go here in February to watch Oscar Nominated Shorts)&quot;)), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;east-village--gramercy-park&quot;
+  }, &quot;East Village / Gramercy Park&quot;), mdx(&quot;p&quot;, null, &quot;This area has the best food and bars!!&quot;), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;foodbars-2&quot;
+  }, &quot;Food/Bars&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;strong&quot;, {
+    parentName: &quot;li&quot;
+  }, &quot;ISE&quot;), &quot; (lunch specials!!)&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;strong&quot;, {
+    parentName: &quot;li&quot;
+  }, &quot;Szechuan Mountain House&quot;), &quot; (go with a large group so you can try more dishes)&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Sobaya&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Mala Project&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Raku*&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Spot Dessert Bar*&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Kura&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Cafe Mogador&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Ho Foods&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Benemon&quot;)), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;bars&quot;
+  }, &quot;Bars&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Death and Company&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Angel\u2019s Share*&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;The Winslow (for trivia night on Mondays)&quot;)), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;places-5&quot;
+  }, &quot;Places&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Strand Bookstore&quot;)), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;soho--nolita--chinatown&quot;
+  }, &quot;Soho / Nolita / Chinatown&quot;), mdx(&quot;p&quot;, null, &quot;I am here way too much\u2026 The food + shopping here is just too good.&quot;), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;food-4&quot;
+  }, &quot;Food&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;strong&quot;, {
+    parentName: &quot;li&quot;
+  }, &quot;Prince Street Pizza&quot;)), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Boba Guys*&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;strong&quot;, {
+    parentName: &quot;li&quot;
+  }, &quot;Kopitiam&quot;), &quot; (get the nasi lemak or the fishball soup. Go off on the appetizers. Check out the surprisingly nice bathroom)&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Cha Cha Matcha*&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Yaya Tea* (for the onigiri)&quot;)), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;places-6&quot;
+  }, &quot;Places&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;The Hole (it\u2019s free!)&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Canal Street Market&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Everlane (lol)&quot;)), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;long-island-city&quot;
+  }, &quot;Long Island City&quot;), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;places-7&quot;
+  }, &quot;Places&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;strong&quot;, {
+    parentName: &quot;li&quot;
+  }, &quot;Noguchi Museum&quot;))), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;brooklyn&quot;
+  }, &quot;Brooklyn&quot;), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;food-5&quot;
+  }, &quot;Food&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Brooklyn\u2019s Homeslice Pizza&quot;)), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;places-8&quot;
+  }, &quot;Places&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Nets game (cheaper and better than the Knicks tbh)&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Alamo Drafthouse&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;ALAND&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, &quot;Brooklyn Museum&quot;)));
 }
 ;
 MDXContent.isMDXComponent = true;</content:encoded></item><item><title><![CDATA[Twenty Photos In Peru]]></title><description><![CDATA[I was fortunate enough to travel in Peru for two weeks recently, and it was the perfect opportunity to get back into photography.]]></description><link>https://ericbai.co/twenty-photos-in-peru</link><guid isPermaLink="false">https://ericbai.co/twenty-photos-in-peru</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Mon, 23 Jul 2018 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
