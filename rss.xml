@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Eric Bai]]></title><description><![CDATA[A personal blog about technology and art.]]></description><link>https://ericbai.co</link><image><url>https://ericbai.co/icons/icon-512x512.png</url><title>Eric Bai</title><link>https://ericbai.co</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 May 2020 13:53:25 GMT</lastBuildDate><atom:link href="https://ericbai.co/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Midsommar and The Farewell: Bringing Eastern Values to Western Film]]></title><description><![CDATA[For an example of how the cultural zeitgeist may be shifting, let’s look at two American films released in 2019.]]></description><link>https://ericbai.co/midsommar-and-the-farewell</link><guid isPermaLink="false">https://ericbai.co/midsommar-and-the-farewell</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Sun, 05 Apr 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Eric Bai]]></title><description><![CDATA[A personal blog about technology and art.]]></description><link>https://ericbai.co</link><image><url>https://ericbai.co/icons/icon-512x512.png</url><title>Eric Bai</title><link>https://ericbai.co</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 May 2020 14:00:46 GMT</lastBuildDate><atom:link href="https://ericbai.co/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Midsommar and The Farewell: Bringing Eastern Values to Western Film]]></title><description><![CDATA[For an example of how the cultural zeitgeist may be shifting, let’s look at two American films released in 2019.]]></description><link>https://ericbai.co/midsommar-and-the-farewell</link><guid isPermaLink="false">https://ericbai.co/midsommar-and-the-farewell</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Sun, 05 Apr 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i &lt; sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
@@ -2747,6 +2747,48 @@ return function MDXContent(_ref) {
   }), mdx(&quot;strong&quot;, {
     parentName: &quot;a&quot;
   }, &quot;The New York Times&quot;), &quot;: Sharing More Than 140 Characters on Twitter&quot;), &quot; \u2014 April 2017&quot;)));
+}
+;
+MDXContent.isMDXComponent = true;</content:encoded></item><item><title><![CDATA[Using Bayesian Optimization for Reinforcement Learning]]></title><description><![CDATA[In this post, we will show you how Bayesian optimization was able to dramatically improve the performance of a reinforcement learning algorithm in an AI challenge.]]></description><link>https://ericbai.co/using-bayesian-optimization-for-reinforcement-learning</link><guid isPermaLink="false">https://ericbai.co/using-bayesian-optimization-for-reinforcement-learning</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Fri, 09 Dec 2016 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i &lt; sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i &lt; sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; target[key] = source[key]; } return target; }
+
+/* @jsx mdx */
+var _frontmatter = {
+  &quot;title&quot;: &quot;Using Bayesian Optimization for Reinforcement Learning&quot;,
+  &quot;author&quot;: &quot;Eric Bai&quot;,
+  &quot;hero&quot;: &quot;img/using-bayesian-optimization/cover.png&quot;,
+  &quot;date&quot;: &quot;2016-12-09T00:00:00.000Z&quot;,
+  &quot;excerpt&quot;: &quot;In this post, we will show you how Bayesian optimization was able to dramatically improve the performance of a reinforcement learning algorithm in an AI challenge.&quot;
+};
+
+var makeShortcode = function makeShortcode(name) {
+  return function MDXDefaultShortcode(props) {
+    console.warn(&quot;Component &quot; + name + &quot; was not imported, exported, or provided by MDXProvider as global scope&quot;);
+    return mdx(&quot;div&quot;, props);
+  };
+};
+
+var layoutProps = {
+  _frontmatter: _frontmatter
+};
+var MDXLayout = &quot;wrapper&quot;;
+return function MDXContent(_ref) {
+  var components = _ref.components,
+      props = _objectWithoutProperties(_ref, [&quot;components&quot;]);
+
+  return mdx(MDXLayout, _extends({}, layoutProps, props, {
+    components: components,
+    mdxType: &quot;MDXLayout&quot;
+  }), mdx(&quot;p&quot;, null, &quot;This is a blog post I collaborated on with Olivia Kim during our internship at SigOpt. &quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;p&quot;
+  }, {
+    &quot;href&quot;: &quot;https://sigopt.com/blog/using-bayesian-optimization-for-reinforcement-learning/&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), &quot;You can read it here&quot;), &quot;.&quot;));
 }
 ;
 MDXContent.isMDXComponent = true;</content:encoded></item><item><title><![CDATA[My First Android App: The Development Process]]></title><description><![CDATA[On August 30th, I released Xcerpt, an Android app for sharing links on Twitter.]]></description><link>https://ericbai.co/my-first-android-app:-the-development-process</link><guid isPermaLink="false">https://ericbai.co/my-first-android-app:-the-development-process</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Fri, 11 Sep 2015 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
