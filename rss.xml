@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Eric Bai]]></title><description><![CDATA[A personal blog about technology and art.]]></description><link>https://ericbai.co</link><image><url>https://ericbai.co/icons/icon-512x512.png</url><title>Eric Bai</title><link>https://ericbai.co</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 May 2020 12:52:07 GMT</lastBuildDate><atom:link href="https://ericbai.co/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Midsommar and The Farewell: Bringing Eastern Values to Western Film]]></title><description><![CDATA[For an example of how the cultural zeitgeist may be shifting, let’s look at two American films released in 2019.]]></description><link>https://ericbai.co/midsommar-and-the-farewell</link><guid isPermaLink="false">https://ericbai.co/midsommar-and-the-farewell</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Sun, 05 Apr 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Eric Bai]]></title><description><![CDATA[A personal blog about technology and art.]]></description><link>https://ericbai.co</link><image><url>https://ericbai.co/icons/icon-512x512.png</url><title>Eric Bai</title><link>https://ericbai.co</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 May 2020 13:53:25 GMT</lastBuildDate><atom:link href="https://ericbai.co/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Midsommar and The Farewell: Bringing Eastern Values to Western Film]]></title><description><![CDATA[For an example of how the cultural zeitgeist may be shifting, let’s look at two American films released in 2019.]]></description><link>https://ericbai.co/midsommar-and-the-farewell</link><guid isPermaLink="false">https://ericbai.co/midsommar-and-the-farewell</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Sun, 05 Apr 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i &lt; sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
@@ -1985,7 +1985,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;p&quot;, null, &quot;In &quot;, mdx(&quot;a&quot;, _extends({
     parentName: &quot;p&quot;
   }, {
-    &quot;href&quot;: &quot;http://ericbai.co/2018/05/10/i-made-some-data-visualizations-for-my-girlfriend/&quot;,
+    &quot;href&quot;: &quot;https://ericbai.co/i-made-some-data-visualizations-for-my-girlfriend&quot;,
     &quot;target&quot;: &quot;_blank&quot;,
     &quot;rel&quot;: &quot;noreferrer&quot;
   }), &quot;my last post&quot;), &quot;, I shared my first data viz project, &quot;, mdx(&quot;a&quot;, _extends({
@@ -2629,6 +2629,124 @@ return function MDXContent(_ref) {
   }, &quot;Try out ChatStats on Github to make your own data visualizations&quot;)), &quot;. ChatStats even works with group chats, which are also incredibly fun to analyze.&quot;), mdx(&quot;p&quot;, null, &quot;For those with coding experience: the code is easy to modify and extend, so you can quickly put together new types of graphs.&quot;), mdx(&quot;p&quot;, null, &quot;If you do try out ChatStats, let me know in the comments!&quot;), mdx(&quot;p&quot;, null, mdx(&quot;em&quot;, {
     parentName: &quot;p&quot;
   }, &quot;This post\u2019s cover photo was taken at a random stop on a highway in Iceland. Photo taken by Kitty Huang.&quot;)));
+}
+;
+MDXContent.isMDXComponent = true;</content:encoded></item><item><title><![CDATA[Selected Press and Media for Xcerpt]]></title><description><![CDATA[Kind words and publicity about my first Android app.]]></description><link>https://ericbai.co/selected-press-and-media-for-xcerpt</link><guid isPermaLink="false">https://ericbai.co/selected-press-and-media-for-xcerpt</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Fri, 19 May 2017 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i &lt; sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i &lt; sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; target[key] = source[key]; } return target; }
+
+/* @jsx mdx */
+var _frontmatter = {
+  &quot;title&quot;: &quot;Selected Press and Media for Xcerpt&quot;,
+  &quot;author&quot;: &quot;Eric Bai&quot;,
+  &quot;hero&quot;: &quot;img/selected-press-and-media-for-xcerpt/cover.jpg&quot;,
+  &quot;date&quot;: &quot;2017-05-19T00:00:00.000Z&quot;,
+  &quot;excerpt&quot;: &quot;Kind words and publicity about my first Android app.&quot;
+};
+
+var makeShortcode = function makeShortcode(name) {
+  return function MDXDefaultShortcode(props) {
+    console.warn(&quot;Component &quot; + name + &quot; was not imported, exported, or provided by MDXProvider as global scope&quot;);
+    return mdx(&quot;div&quot;, props);
+  };
+};
+
+var layoutProps = {
+  _frontmatter: _frontmatter
+};
+var MDXLayout = &quot;wrapper&quot;;
+return function MDXContent(_ref) {
+  var components = _ref.components,
+      props = _objectWithoutProperties(_ref, [&quot;components&quot;]);
+
+  return mdx(MDXLayout, _extends({}, layoutProps, props, {
+    components: components,
+    mdxType: &quot;MDXLayout&quot;
+  }), mdx(&quot;p&quot;, null, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;p&quot;
+  }, {
+    &quot;href&quot;: &quot;http://xcerpt.surge.sh/&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), &quot;Xcerpt&quot;), &quot; is an Android app I made for sharing links on Twitter. See my &quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;p&quot;
+  }, {
+    &quot;href&quot;: &quot;https://ericbai.co/my-first-android-app:-the-development-process&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), &quot;previous blog post&quot;), &quot; for more information about how Xcerpt works and how I designed and built it. In this post, I document some of the more notable shows and publications that shared Xcerpt with its audiences.&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;li&quot;
+  }, {
+    &quot;href&quot;: &quot;https://twit.tv/shows/all-about-android/episodes/235&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), mdx(&quot;strong&quot;, {
+    parentName: &quot;a&quot;
+  }, &quot;All About Android&quot;), &quot;: Episode 235 (skip to 1:46:50)&quot;), &quot; \u2014 On October 2015, Gina Trapani, the founder of Lifehacker, recommended Xcerpt. They do a live demo of it, which goes pretty poorly, embarrassingly enough (I did fix all the issues they encountered very quickly though!). Gina heard about Xcerpt on Twitter, recommended by one of her followers. I had a brief conversation with her where I said I thought it was really cool that she heard about my app. I didn\u2019t expect her to promote it on this show! I think this is what got the ball rolling, causing a lot of other publications to also recommend Xcerpt.&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;li&quot;
+  }, {
+    &quot;href&quot;: &quot;https://www.androidauthority.com/xcerpt-for-twitter-share-beautiful-article-snippets-with-ease-650637/&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), mdx(&quot;strong&quot;, {
+    parentName: &quot;a&quot;
+  }, &quot;Android Authority&quot;), &quot;: Xcerpt for Twitter lets you share beautiful article snippets with ease&quot;), &quot; \u2014 October 2015&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;li&quot;
+  }, {
+    &quot;href&quot;: &quot;https://www.cnet.com/how-to/share-article-snippets-with-xcerpt-for-twitter-on-android/&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), mdx(&quot;strong&quot;, {
+    parentName: &quot;a&quot;
+  }, &quot;CNET&quot;), &quot;: Share article snippets with Xcerpt for Twitter on Android&quot;), &quot; \u2014 October 2015&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;li&quot;
+  }, {
+    &quot;href&quot;: &quot;https://www.wired.com/2016/01/best-text-screenshot-apps/&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), mdx(&quot;strong&quot;, {
+    parentName: &quot;a&quot;
+  }, &quot;WIRED&quot;), &quot;: You\u2019re Doing Text Screenshots Wrong Without These Apps&quot;), &quot; \u2014 January 2016&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;li&quot;
+  }, {
+    &quot;href&quot;: &quot;https://www.tested.com/tech/android/565192-google-play-app-roundup/&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), mdx(&quot;strong&quot;, {
+    parentName: &quot;a&quot;
+  }, &quot;Tested&quot;), &quot;: Google Play App Roundup: Xcerpt for Twitter, Thumb Drift, and Rocketfella&quot;), &quot; \u2014 March 2016. The main reason I found this one notable was because this website is run by the Mythbusters, Adam Savage and Jamie Hyneman. LOL.&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;li&quot;
+  }, {
+    &quot;href&quot;: &quot;https://www.gizmodo.co.uk/2016/03/the-weeks-top-android-iphone-ipad-and-windows-mobile-apps-11/&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), mdx(&quot;strong&quot;, {
+    parentName: &quot;a&quot;
+  }, &quot;Gizmodo UK&quot;), &quot;: The Week\u2019s Top Android, iPhone, iPad, and Windows Mobile Apps&quot;), &quot; \u2014 March 2016&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;li&quot;
+  }, {
+    &quot;href&quot;: &quot;https://www.nytimes.com/2017/04/26/technology/personaltech/sharing-screen-shots-on-twitter.html&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), mdx(&quot;strong&quot;, {
+    parentName: &quot;a&quot;
+  }, &quot;The New York Times&quot;), &quot;: Sharing More Than 140 Characters on Twitter&quot;), &quot; \u2014 April 2017&quot;)));
 }
 ;
 MDXContent.isMDXComponent = true;</content:encoded></item><item><title><![CDATA[My First Android App: The Development Process]]></title><description><![CDATA[On August 30th, I released Xcerpt, an Android app for sharing links on Twitter.]]></description><link>https://ericbai.co/my-first-android-app:-the-development-process</link><guid isPermaLink="false">https://ericbai.co/my-first-android-app:-the-development-process</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Fri, 11 Sep 2015 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
