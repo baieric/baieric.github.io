@@ -1,4 +1,208 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Eric Bai]]></title><description><![CDATA[A personal blog about technology and art.]]></description><link>https://ericbai.co</link><image><url>https://ericbai.co/icons/icon-512x512.png</url><title>Eric Bai</title><link>https://ericbai.co</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 May 2020 17:44:53 GMT</lastBuildDate><atom:link href="https://ericbai.co/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Midsommar and The Farewell: Bringing Eastern Values to Western Film]]></title><description><![CDATA[For an example of how the cultural zeitgeist may be shifting, let’s look at two American films released in 2019.]]></description><link>https://ericbai.co/midsommar-and-the-farewell</link><guid isPermaLink="false">https://ericbai.co/midsommar-and-the-farewell</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Sun, 05 Apr 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Eric Bai]]></title><description><![CDATA[A personal blog about technology and art.]]></description><link>https://ericbai.co</link><image><url>https://ericbai.co/icons/icon-512x512.png</url><title>Eric Bai</title><link>https://ericbai.co</link></image><generator>GatsbyJS</generator><lastBuildDate>Mon, 04 May 2020 02:28:09 GMT</lastBuildDate><atom:link href="https://ericbai.co/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[How I Find Movies]]></title><description><![CDATA[Lessons on choosing the next movie to watch, going to film festivals, and sifting through all the streaming services.]]></description><link>https://ericbai.co/how-i-find-movies</link><guid isPermaLink="false">https://ericbai.co/how-i-find-movies</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Mon, 04 May 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i &lt; sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i &lt; sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; target[key] = source[key]; } return target; }
+
+/* @jsx mdx */
+var _frontmatter = {
+  &quot;hero&quot;: &quot;img/how-i-find-movies/cover.jpg&quot;,
+  &quot;title&quot;: &quot;How I Find Movies&quot;,
+  &quot;date&quot;: &quot;2020-05-04T00:00:00.000Z&quot;,
+  &quot;author&quot;: &quot;Eric Bai&quot;,
+  &quot;excerpt&quot;: &quot;Lessons on choosing the next movie to watch, going to film festivals, and sifting through all the streaming services.&quot;
+};
+
+var makeShortcode = function makeShortcode(name) {
+  return function MDXDefaultShortcode(props) {
+    console.warn(&quot;Component &quot; + name + &quot; was not imported, exported, or provided by MDXProvider as global scope&quot;);
+    return mdx(&quot;div&quot;, props);
+  };
+};
+
+var layoutProps = {
+  _frontmatter: _frontmatter
+};
+var MDXLayout = &quot;wrapper&quot;;
+return function MDXContent(_ref) {
+  var components = _ref.components,
+      props = _objectWithoutProperties(_ref, [&quot;components&quot;]);
+
+  return mdx(MDXLayout, _extends({}, layoutProps, props, {
+    components: components,
+    mdxType: &quot;MDXLayout&quot;
+  }), mdx(&quot;p&quot;, null, &quot;When the topic comes up about how film is a big hobby of mine, the first question I get asked is what my favourite movies are. This one I never have a good answer for. Choosing just one feels so wrong to me! The next most common question is how I know what movies to watch. This post tries to answer that. I\u2019m not sure if it serves as a particularly useful guide, but hopefully I can at least give some insight into a process that I enjoy.&quot;), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;general-signals-i-use-for-whether-to-watch-a-movie&quot;
+  }, &quot;General Signals I Use for Whether to Watch a Movie&quot;), mdx(&quot;p&quot;, null, &quot;I used to rely on RottenTomatoes scores a lot, but now I basically never look at aggregators. I almost never watch trailers, and sometimes I don\u2019t even know what genre the movie is going to be before it starts. I usually don\u2019t choose movies based on what actors are in them, either.&quot;), mdx(&quot;p&quot;, null, &quot;The signals I do use:&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;strong&quot;, {
+    parentName: &quot;li&quot;
+  }, &quot;The director&quot;), &quot;. Either a very established director with a long history of great films, like David Fincher or Denis Villeneuve, or up and coming directors, who have only made a couple of films that have been stellar, like Jordan Peele or Greta Gerwig. Honestly, this signal isn\u2019t perfect because so many directorial debuts have been so good recently.&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;strong&quot;, {
+    parentName: &quot;li&quot;
+  }, &quot;Film festival awards.&quot;), &quot; Awards season, which ends with the Oscars, act as more of a retrospective of the past year. To get on the hype train as early as possible, pay attention to which movies have a lot of buzz at film festivals, which is when they premiere. I go into more detail about this later on in this post.&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;strong&quot;, {
+    parentName: &quot;li&quot;
+  }, &quot;Reviews from critics I follow, and in general, word of mouth from film communities&quot;), &quot;. Rather than looking at aggregate scores, I find critics and culture writers whose articles and reviews I enjoy and just read a lot. This is probably the most important signal.&quot;)), mdx(&quot;p&quot;, null, &quot;Some signals I use when I have too many movies I want to watch:&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;strong&quot;, {
+    parentName: &quot;li&quot;
+  }, &quot;Length of the movie.&quot;), &quot; I prefer more concise movies. Given the choice of dozens of movies I\u2019m interested in on streaming websites, I\u2019ll probably gravitate to the ones under two hours first.&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;strong&quot;, {
+    parentName: &quot;li&quot;
+  }, &quot;When the movie was released.&quot;), &quot; I generally like movies made more recently that are in touch with the current culture. Of course, there\u2019s lots of timeless older films too, and I end of watching them by going through a director\u2019s filmography backwards.&quot;), mdx(&quot;li&quot;, {
+    parentName: &quot;ul&quot;
+  }, mdx(&quot;strong&quot;, {
+    parentName: &quot;li&quot;
+  }, &quot;Cultural significance.&quot;), &quot; If I really have no idea which film in my watchlist will suit my tastes.&quot;)), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;the-film-community&quot;
+  }, &quot;The Film Community&quot;), mdx(&quot;p&quot;, null, &quot;I think the most obvious piece of advice that you\u2019ll hear about any hobby is, find a community! I follow a lot of directors, film societies, and amateur and professional film critics on Twitter and an app called Letterboxd. Letterboxd is the app I use to record what films I watch, keep a watchlist of films I want to watch, and read reviews and lists. Think of it as Goodreads for movies, though I personally think Letterboxd\u2019s UI is way better. I love the app a lot.&quot;), mdx(&quot;p&quot;, null, &quot;Just by passively reading Film Twitter tweets and Letterboxd reviews, you get a good sense of (1) what upcoming movies are anticipated and (2) what past movies you need to stream. Plus, there\u2019s also a lot of great film memes.&quot;), mdx(&quot;p&quot;, null, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;p&quot;
+  }, {
+    &quot;className&quot;: &quot;gatsby-resp-image-wrapper&quot;,
+    &quot;style&quot;: {
+      &quot;position&quot;: &quot;relative&quot;,
+      &quot;display&quot;: &quot;block&quot;,
+      &quot;marginLeft&quot;: &quot;auto&quot;,
+      &quot;marginRight&quot;: &quot;auto&quot;,
+      &quot;maxWidth&quot;: &quot;1178px&quot;
+    }
+  }), &quot;\n      &quot;, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;span&quot;
+  }, {
+    &quot;className&quot;: &quot;gatsby-resp-image-background-image&quot;,
+    &quot;style&quot;: {
+      &quot;paddingBottom&quot;: &quot;53.565365025466896%&quot;,
+      &quot;position&quot;: &quot;relative&quot;,
+      &quot;bottom&quot;: &quot;0&quot;,
+      &quot;left&quot;: &quot;0&quot;,
+      &quot;backgroundImage&quot;: &quot;url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEDBP/EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//aAAwDAQACEAMQAAABy53KNExZ/wD/xAAaEAEAAgMBAAAAAAAAAAAAAAACAREAAxAS/9oACAEBAAEFAtheuUlGXeFry5vn/8QAFhEBAQEAAAAAAAAAAAAAAAAAEQEQ/9oACAEDAQE/ASDn/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGhABAAEFAAAAAAAAAAAAAAAAARAAESFBcf/aAAgBAQAGPwLTyUviiP/EABsQAAMAAgMAAAAAAAAAAAAAAAABESFhEEFR/9oACAEBAAE/IYib+gxVSVyO1aRmHoMavOP/2gAMAwEAAgADAAAAEHjf/8QAFREBAQAAAAAAAAAAAAAAAAAAECH/2gAIAQMBAT8QtH//xAAWEQEBAQAAAAAAAAAAAAAAAAABERD/2gAIAQIBAT8QFsc//8QAGhABAQEBAAMAAAAAAAAAAAAAAREhABAxYf/aAAgBAQABPxCwCiqqakb2OVjLnPoPwnPUipTT09YFhDJ4/9k=&apos;)&quot;,
+      &quot;backgroundSize&quot;: &quot;cover&quot;,
+      &quot;display&quot;: &quot;block&quot;
+    }
+  })), &quot;\n  &quot;, mdx(&quot;picture&quot;, {
+    parentName: &quot;span&quot;
+  }, &quot;\n        &quot;, mdx(&quot;source&quot;, _extends({
+    parentName: &quot;picture&quot;
+  }, {
+    &quot;srcSet&quot;: [&quot;/static/3f2731e9c145d6db9fa58d7fa2af3b1c/dc9fb/best-meme.webp 1178w&quot;],
+    &quot;sizes&quot;: &quot;(max-width: 1178px) 100vw, 1178px&quot;,
+    &quot;type&quot;: &quot;image/webp&quot;
+  })), &quot;\n        &quot;, mdx(&quot;source&quot;, _extends({
+    parentName: &quot;picture&quot;
+  }, {
+    &quot;srcSet&quot;: [&quot;/static/3f2731e9c145d6db9fa58d7fa2af3b1c/7eedf/best-meme.jpg 1178w&quot;],
+    &quot;sizes&quot;: &quot;(max-width: 1178px) 100vw, 1178px&quot;,
+    &quot;type&quot;: &quot;image/jpeg&quot;
+  })), &quot;\n        &quot;, mdx(&quot;img&quot;, _extends({
+    parentName: &quot;picture&quot;
+  }, {
+    &quot;className&quot;: &quot;gatsby-resp-image-image&quot;,
+    &quot;src&quot;: &quot;/static/3f2731e9c145d6db9fa58d7fa2af3b1c/7eedf/best-meme.jpg&quot;,
+    &quot;alt&quot;: &quot;The best letterboxd list&quot;,
+    &quot;title&quot;: &quot;The best letterboxd list&quot;,
+    &quot;loading&quot;: &quot;lazy&quot;,
+    &quot;style&quot;: {
+      &quot;width&quot;: &quot;100%&quot;,
+      &quot;height&quot;: &quot;100%&quot;,
+      &quot;margin&quot;: &quot;0&quot;,
+      &quot;verticalAlign&quot;: &quot;middle&quot;,
+      &quot;position&quot;: &quot;absolute&quot;,
+      &quot;top&quot;: &quot;0&quot;,
+      &quot;left&quot;: &quot;0&quot;
+    }
+  })), &quot;\n      &quot;), &quot;\n    &quot;)), mdx(&quot;p&quot;, null, &quot;The community does quite a bit of the work for you, but there\u2019s a lot more you can do as well.&quot;), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;finding-upcoming-movies&quot;
+  }, &quot;Finding Upcoming Movies&quot;), mdx(&quot;p&quot;, null, &quot;This section isn\u2019t super relevant during quarantine, since we\u2019re not going to get huge movie releases in theatres for a while. Still, figuring out what movies are going to be big before they\u2019ve even hit theatres is so exciting! The first thing you need to know is how movies get released.&quot;), mdx(&quot;p&quot;, null, &quot;Most highly anticipated films premiere at &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;film festivals&quot;), &quot;. Unless you\u2019re in the film industry or a professional film critic, this is the earliest possible time that you can watch a movie. The most prestigious film festivals are: the Cannes Festival, the Venice Film Festival, the Toronto International Film Festival (TIFF), the Sundance Film Festival, and the Berlin International Film Festival. These can be competitive to get into, but many major cities will have festivals as well. I love New York Film Festival (NYFF), personally.&quot;), mdx(&quot;p&quot;, null, &quot;Cannes Festival is definitely the most prestigious \u2014 often, it\u2019s the first place highly anticipated films will ever be shown. If you\u2019re not in the film industry, you have to apply for a festival pass by writing a cover letter, so it\u2019s not easy to get in. Cannes has a special program for people under 28 years old, where it\u2019s completely free if you are accepted (besides travel and accommodation costs, of course). I was hoping to go this year, but then the &quot;, mdx(&quot;em&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;craziest&quot;), &quot; thing happened recently and Cannes was postponed indefinitely\u2026 I digress.&quot;), mdx(&quot;p&quot;, null, &quot;Every year (well, &quot;, mdx(&quot;em&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;typically&quot;), &quot; every year), Cannes will award a Palme D\u2019or, the highest prize of the festival.  &quot;, mdx(&quot;em&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;Parasite&quot;), &quot; won in 2019. Other awards to look out for include best director, best screenplay, and the Grand Prix (which is like \u201Csecond place\u201D at Cannes).&quot;), mdx(&quot;p&quot;, null, &quot;Other festivals, like TIFF and Sundance, will have similar awards. By paying attention to these awards and the general buzz from the industry, you can know which movies to watch either at a local festival or as soon as the movie is widely released. Right before and during the more popular festivals, you can get a sense on what films people are excited about on social media and news publications.&quot;), mdx(&quot;p&quot;, null, &quot;I feel really fortunate to have watched &quot;, mdx(&quot;em&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;Parasite&quot;), &quot; and &quot;, mdx(&quot;em&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;Portrait of a Lady on Fire&quot;), &quot; at NYFF, before they were released and well before general audiences heard much about them.&quot;), mdx(&quot;p&quot;, null, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;p&quot;
+  }, {
+    &quot;className&quot;: &quot;gatsby-resp-image-wrapper&quot;,
+    &quot;style&quot;: {
+      &quot;position&quot;: &quot;relative&quot;,
+      &quot;display&quot;: &quot;block&quot;,
+      &quot;marginLeft&quot;: &quot;auto&quot;,
+      &quot;marginRight&quot;: &quot;auto&quot;,
+      &quot;maxWidth&quot;: &quot;4032px&quot;
+    }
+  }), &quot;\n      &quot;, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;span&quot;
+  }, {
+    &quot;className&quot;: &quot;gatsby-resp-image-background-image&quot;,
+    &quot;style&quot;: {
+      &quot;paddingBottom&quot;: &quot;75%&quot;,
+      &quot;position&quot;: &quot;relative&quot;,
+      &quot;bottom&quot;: &quot;0&quot;,
+      &quot;left&quot;: &quot;0&quot;,
+      &quot;backgroundImage&quot;: &quot;url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIDBAX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/2gAMAwEAAhADEAAAAch2bFVJCP8A/8QAFxABAQEBAAAAAAAAAAAAAAAAAgESA//aAAgBAQABBQLBpJMTs3M5DB6d7H0//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQIBAT8Bp//EABsQAQACAwEBAAAAAAAAAAAAAAEAAhESUSFB/9oACAEBAAY/AjCr9mbC1jqYOT2rnsFrscmaV1OT/8QAGhABAAIDAQAAAAAAAAAAAAAAAQARITFBUf/aAAgBAQABPyERsdK1BXSCNTz7XFWCFYMZn1VRbMv/2gAMAwEAAgADAAAAEDA//8QAFhEBAQEAAAAAAAAAAAAAAAAAEQAB/9oACAEDAQE/EAyNv//EABYRAQEBAAAAAAAAAAAAAAAAABEAIf/aAAgBAgEBPxAOTf/EABoQAQACAwEAAAAAAAAAAAAAAAEAESExQVH/2gAIAQEAAT8QtOhyeSCzWUaUl2GTgY9g6YylVG2uqwAuELtysyyTAGBSGdT/2Q==&apos;)&quot;,
+      &quot;backgroundSize&quot;: &quot;cover&quot;,
+      &quot;display&quot;: &quot;block&quot;
+    }
+  })), &quot;\n  &quot;, mdx(&quot;picture&quot;, {
+    parentName: &quot;span&quot;
+  }, &quot;\n        &quot;, mdx(&quot;source&quot;, _extends({
+    parentName: &quot;picture&quot;
+  }, {
+    &quot;srcSet&quot;: [&quot;/static/51e49103dd24ab15064e6fbc6b3aeb8d/a3bc4/nyff.webp 2500w&quot;, &quot;/static/51e49103dd24ab15064e6fbc6b3aeb8d/68cee/nyff.webp 4032w&quot;],
+    &quot;sizes&quot;: &quot;(max-width: 4032px) 100vw, 4032px&quot;,
+    &quot;type&quot;: &quot;image/webp&quot;
+  })), &quot;\n        &quot;, mdx(&quot;source&quot;, _extends({
+    parentName: &quot;picture&quot;
+  }, {
+    &quot;srcSet&quot;: [&quot;/static/51e49103dd24ab15064e6fbc6b3aeb8d/44ecf/nyff.jpg 2500w&quot;, &quot;/static/51e49103dd24ab15064e6fbc6b3aeb8d/657cd/nyff.jpg 4032w&quot;],
+    &quot;sizes&quot;: &quot;(max-width: 4032px) 100vw, 4032px&quot;,
+    &quot;type&quot;: &quot;image/jpeg&quot;
+  })), &quot;\n        &quot;, mdx(&quot;img&quot;, _extends({
+    parentName: &quot;picture&quot;
+  }, {
+    &quot;className&quot;: &quot;gatsby-resp-image-image&quot;,
+    &quot;src&quot;: &quot;/static/51e49103dd24ab15064e6fbc6b3aeb8d/657cd/nyff.jpg&quot;,
+    &quot;alt&quot;: &quot;New York Film Festival&quot;,
+    &quot;title&quot;: &quot;New York Film Festival&quot;,
+    &quot;loading&quot;: &quot;lazy&quot;,
+    &quot;style&quot;: {
+      &quot;width&quot;: &quot;100%&quot;,
+      &quot;height&quot;: &quot;100%&quot;,
+      &quot;margin&quot;: &quot;0&quot;,
+      &quot;verticalAlign&quot;: &quot;middle&quot;,
+      &quot;position&quot;: &quot;absolute&quot;,
+      &quot;top&quot;: &quot;0&quot;,
+      &quot;left&quot;: &quot;0&quot;
+    }
+  })), &quot;\n      &quot;), &quot;\n    &quot;)), mdx(&quot;p&quot;, null, &quot;In my experience with TIFF and NYFF, getting tickets works similarly to getting tickets for a really popular concert. You have to keep a reminder for when the tickets are first released, and as soon as the tickets come out, go to the website and you\u2019ll be put into a virtual queue. You may have to wait a couple hours at this point. Your chances at getting tickets will be very good, but sometimes really popular films can still sell out right away.&quot;), mdx(&quot;p&quot;, null, &quot;If you can afford it, you can buy a membership for the film society that runs the festival \u2014 they often have cheaper prices for students and younger people. This lets you get early access to tickets, so you\u2019ll be pretty much guaranteed any ticket you want. I think this is worth it for TIFF especially, since I\u2019ve found it much harder than NYFF to get tickets, and a TIFF membership is not too expensive.&quot;), mdx(&quot;p&quot;, null, &quot;Watching a movie at a film festival is different than watching general release. There\u2019s no trailers. The audience demographic is generally older. Most importantly, there\u2019s often a Q&amp;A at the end of the film with the director and some of the actors, which adds so much to the experience.&quot;), mdx(&quot;p&quot;, null, &quot;Even outside of festivals, you can find screenings that feature Q&amp;As with an actor or director, especially around the movie\u2019s general or early release. To track these down, either sign up for mailing lists or follow social media accounts for local independent theatres and film societies. In Toronto, I follow &quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;p&quot;
+  }, {
+    &quot;href&quot;: &quot;https://twitter.com/TIFF_NET&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), &quot;@TIFF_NET&quot;), &quot;. In New York, I follow &quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;p&quot;
+  }, {
+    &quot;href&quot;: &quot;https://twitter.com/FilmLinc&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), &quot;@FilmLinc&quot;), &quot; and am on mailing lists with IFC Center and Angelika Film Center. You can also follow the specific directors and actors who you are interested in seeing.&quot;), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;choosing-movies-to-stream&quot;
+  }, &quot;Choosing Movies to Stream&quot;), mdx(&quot;p&quot;, null, &quot;I have Netflix and Amazon Prime Video, and occasionally I\u2019ll sign up for a free trial for other streaming services when I need to mix things up. Worst case, if a movie isn\u2019t streaming anywhere, it\u2019s almost always available to rent on YouTube. One particular service I\u2019m excited to try soon is the Criterion Collection, which has a lot of classic and foreign films.&quot;), mdx(&quot;p&quot;, null, &quot;Besides word of mouth, I build up a watchlist by searching for movies in a variety of ways: looking at popular movies released on a given year, looking at lists of movies curated by others, looking at directors\u2019 filmographies. I do most of this on Letterboxd, which has a useful feature of greying out movies I\u2019ve already watched. There\u2019s lots of ways to conveniently filter lists and sort lists as well.&quot;), mdx(&quot;p&quot;, null, &quot;Nowadays, I completely ignore any recommendations from streaming services. I have a Letterboxd Pro account, which allows me to specify which streaming services I use and then allows me to filter my watchlist by those services. I especially like the fact that I can specify streaming services by country, so paired with a VPN, I have lots of options (though I\u2019ve found the availability data to be not super accurate for certain countries).&quot;), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;final-thought&quot;
+  }, &quot;Final Thought&quot;), mdx(&quot;p&quot;, null, &quot;There\u2019s so many good movies to watch!!!&quot;));
+}
+;
+MDXContent.isMDXComponent = true;</content:encoded></item><item><title><![CDATA[Midsommar and The Farewell: Bringing Eastern Values to Western Film]]></title><description><![CDATA[For an example of how the cultural zeitgeist may be shifting, let’s look at two American films released in 2019.]]></description><link>https://ericbai.co/midsommar-and-the-farewell</link><guid isPermaLink="false">https://ericbai.co/midsommar-and-the-farewell</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Sun, 05 Apr 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i &lt; sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
