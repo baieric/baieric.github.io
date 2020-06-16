@@ -1,4 +1,72 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Eric Bai]]></title><description><![CDATA[A personal blog about technology and art.]]></description><link>https://ericbai.co</link><image><url>https://ericbai.co/icons/icon-512x512.png</url><title>Eric Bai</title><link>https://ericbai.co</link></image><generator>GatsbyJS</generator><lastBuildDate>Thu, 07 May 2020 01:38:24 GMT</lastBuildDate><atom:link href="https://ericbai.co/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[How I Find Movies]]></title><description><![CDATA[Lessons on choosing the next movie to watch, going to film festivals, and sifting through all the streaming services.]]></description><link>https://ericbai.co/how-i-find-movies</link><guid isPermaLink="false">https://ericbai.co/how-i-find-movies</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Wed, 06 May 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Eric Bai]]></title><description><![CDATA[A personal blog about technology and art.]]></description><link>https://ericbai.co</link><image><url>https://ericbai.co/icons/icon-512x512.png</url><title>Eric Bai</title><link>https://ericbai.co</link></image><generator>GatsbyJS</generator><lastBuildDate>Tue, 16 Jun 2020 05:07:20 GMT</lastBuildDate><atom:link href="https://ericbai.co/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Three Years of Melodrama]]></title><description><![CDATA[To celebrate Lorde's album Melodrama, I made a webpage adaptation of the lyrics booklet that comes with the physical CD.]]></description><link>https://ericbai.co/three-years-of-melodrama</link><guid isPermaLink="false">https://ericbai.co/three-years-of-melodrama</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Tue, 16 Jun 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i &lt; sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i &lt; sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; target[key] = source[key]; } return target; }
+
+/* @jsx mdx */
+var _frontmatter = {
+  &quot;hero&quot;: &quot;img/melodrama/cover.png&quot;,
+  &quot;title&quot;: &quot;Three Years of Melodrama&quot;,
+  &quot;date&quot;: &quot;2020-06-16T00:00:00.000Z&quot;,
+  &quot;author&quot;: &quot;Eric Bai&quot;,
+  &quot;excerpt&quot;: &quot;To celebrate Lorde&apos;s album Melodrama, I made a webpage adaptation of the lyrics booklet that comes with the physical CD.&quot;
+};
+
+var makeShortcode = function makeShortcode(name) {
+  return function MDXDefaultShortcode(props) {
+    console.warn(&quot;Component &quot; + name + &quot; was not imported, exported, or provided by MDXProvider as global scope&quot;);
+    return mdx(&quot;div&quot;, props);
+  };
+};
+
+var layoutProps = {
+  _frontmatter: _frontmatter
+};
+var MDXLayout = &quot;wrapper&quot;;
+return function MDXContent(_ref) {
+  var components = _ref.components,
+      props = _objectWithoutProperties(_ref, [&quot;components&quot;]);
+
+  return mdx(MDXLayout, _extends({}, layoutProps, props, {
+    components: components,
+    mdxType: &quot;MDXLayout&quot;
+  }), mdx(&quot;p&quot;, null, &quot;On this day three years ago, Lorde released her sophomore album &quot;, mdx(&quot;em&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;Melodrama&quot;), &quot;. It\u2019s hard to articulate how meaningful &quot;, mdx(&quot;em&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;Melodrama&quot;), &quot; has been to me\u2014it\u2019s my favourite album of all time, and whatever is second place doesn\u2019t come close. I remember the year the album came out: playing it on repeat every day, seeing Lorde at Osheaga in Montreal, and seeing her again at the Melodrama World Tour in Toronto.&quot;), mdx(&quot;p&quot;, null, &quot;To celebrate the album, I made a webpage adaptation of the lyrics booklet that comes with the physical CD.&quot;), mdx(&quot;p&quot;, null, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;p&quot;
+  }, {
+    &quot;href&quot;: &quot;https://ericbai.co/melodrama/&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), mdx(&quot;strong&quot;, {
+    parentName: &quot;a&quot;
+  }, &quot;Click here to open Eric\u2019s &quot;, mdx(&quot;em&quot;, {
+    parentName: &quot;strong&quot;
+  }, &quot;Melodrama&quot;), &quot; webpage.&quot;))), mdx(&quot;p&quot;, null, &quot;It\u2019s mobile friendly but I prefer it on desktop. It was a pleasure to make, I hope you enjoy. The rest of this post is just some tidbits on the making-of!&quot;), mdx(&quot;hr&quot;, null), mdx(&quot;p&quot;, null, &quot;When I listen to music with really good songwriting, I sometimes want to read the lyrics as I listen along. Any lyrics site like Genius is good enough normally, but for listening to an album front-to-back, navigating between songs is quite annoying. It would be amazing if lyrics websites offered a full-album view!&quot;), mdx(&quot;p&quot;, null, &quot;While looking for the best lyrics-viewing experience, I found &quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;p&quot;
+  }, {
+    &quot;href&quot;: &quot;https://imgur.com/r/lorde/MmsGz&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), &quot;high-quality scans of the &quot;, mdx(&quot;em&quot;, {
+    parentName: &quot;a&quot;
+  }, &quot;Melodrama&quot;), &quot; album booklet on Imgur&quot;), &quot;. This was a high-fidelity format for reading lyrics, but not so suitable for the web, so I decided to adapt it into a webpage. This project would not have been possible without these scans from Reddit user u/Hawkachino.&quot;), mdx(&quot;p&quot;, null, &quot;I transcribed the lyrics from the scans myself rather than copying the lyrics from a lyrics site. This was important for capturing the various idiosyncrasies of the \u201Cofficial\u201D lyrics: the particular usage of punctuation (like the use of brackets and em-dashes), the formatting (the line breaks, the italics), and even the choice of spelling (e.g. \u201Ctryna\u201D, \u201Ci\u201D). They were clear stylistic choices that I wanted to preserve as much as possible. This was actually a fun experience\u2014it allowed me to dwell on each word and turn of phrase. Good writing is worth poring over.&quot;), mdx(&quot;p&quot;, null, &quot;Unlike most lyrics sites, the official lyrics don\u2019t repeat any refrains or choruses. I like this choice because it allows the lyrics to read more like a poem\u2014they stand up well on their own without the music. There\u2019s one instance of a refrain in \u201CSupercut\u201D where Lorde changes the line \u201CI\u2019m someone you maybe might love\u201D to \u201CSlow motion, I\u2019m watching our love\u201D, and the official lyrics don\u2019t include it. Besides that, the booklet records every single line.&quot;), mdx(&quot;p&quot;, null, &quot;The rest of the process was just formatting the CSS to be true to the booklet, using Photoshop to grab the song titles, and grabbing the images from a combination of the scans and the original photos from &quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;p&quot;
+  }, {
+    &quot;href&quot;: &quot;https://www.artpartner.com/artists/film-print/theo-wenner/archive/story/lorde-melodrama-album-art/&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), &quot;the photographer\u2019s website&quot;), &quot;. I used the font Canela, which is also used in the &quot;, mdx(&quot;em&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;Melodrama&quot;), &quot; vinyl song list (thanks Sharon for finding the font for me!).&quot;), mdx(&quot;p&quot;, null, &quot;I hope others who love &quot;, mdx(&quot;em&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;Melodrama&quot;), &quot; and love reading along to the lyrics will find this useful! Melodrama forever.&quot;));
+}
+;
+MDXContent.isMDXComponent = true;</content:encoded></item><item><title><![CDATA[How I Find Movies]]></title><description><![CDATA[Lessons on choosing the next movie to watch, going to film festivals, and sifting through all the streaming services.]]></description><link>https://ericbai.co/how-i-find-movies</link><guid isPermaLink="false">https://ericbai.co/how-i-find-movies</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Wed, 06 May 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i &lt; sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
