@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Eric Bai]]></title><description><![CDATA[A personal blog about technology and art.]]></description><link>https://ericbai.co</link><image><url>https://ericbai.co/icons/icon-512x512.png</url><title>Eric Bai</title><link>https://ericbai.co</link></image><generator>GatsbyJS</generator><lastBuildDate>Thu, 25 Jun 2020 03:35:35 GMT</lastBuildDate><atom:link href="https://ericbai.co/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Why I Write]]></title><description><![CDATA[Our bodies were never built to to contain all our thoughts and feelings. So we write.]]></description><link>https://ericbai.co/why-i-write</link><guid isPermaLink="false">https://ericbai.co/why-i-write</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Wed, 24 Jun 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Eric Bai]]></title><description><![CDATA[A personal blog about technology and art.]]></description><link>https://ericbai.co</link><image><url>https://ericbai.co/icons/icon-512x512.png</url><title>Eric Bai</title><link>https://ericbai.co</link></image><generator>GatsbyJS</generator><lastBuildDate>Thu, 25 Jun 2020 03:52:13 GMT</lastBuildDate><atom:link href="https://ericbai.co/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Why I Write]]></title><description><![CDATA[Our bodies were never built to to contain all our thoughts and feelings. So we write.]]></description><link>https://ericbai.co/why-i-write</link><guid isPermaLink="false">https://ericbai.co/why-i-write</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Wed, 24 Jun 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i &lt; sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
@@ -110,6 +110,54 @@ return function MDXContent(_ref) {
   }, &quot;Melodrama&quot;), &quot; vinyl song list (thanks Sharon for finding the font for me!).&quot;), mdx(&quot;p&quot;, null, &quot;I hope others who love &quot;, mdx(&quot;em&quot;, {
     parentName: &quot;p&quot;
   }, &quot;Melodrama&quot;), &quot; and love reading along to the lyrics will find this useful! Melodrama forever.&quot;));
+}
+;
+MDXContent.isMDXComponent = true;</content:encoded></item><item><title><![CDATA[Review: The Wind Rises]]></title><description><![CDATA[I learned about the origins of the name Ghibli yesterday. It's central to this film's thesis.]]></description><link>https://ericbai.co/review:-the-wind-rises</link><guid isPermaLink="false">https://ericbai.co/review:-the-wind-rises</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Sun, 24 May 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i &lt; sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i &lt; sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; target[key] = source[key]; } return target; }
+
+/* @jsx mdx */
+var _frontmatter = {
+  &quot;hero&quot;: &quot;img/review-the-wind-rises/the-wind-rises.jpg&quot;,
+  &quot;title&quot;: &quot;Review: The Wind Rises&quot;,
+  &quot;date&quot;: &quot;2020-05-24T00:00:00.000Z&quot;,
+  &quot;author&quot;: &quot;Eric Bai&quot;,
+  &quot;excerpt&quot;: &quot;I learned about the origins of the name Ghibli yesterday. It&apos;s central to this film&apos;s thesis.&quot;
+};
+
+var makeShortcode = function makeShortcode(name) {
+  return function MDXDefaultShortcode(props) {
+    console.warn(&quot;Component &quot; + name + &quot; was not imported, exported, or provided by MDXProvider as global scope&quot;);
+    return mdx(&quot;div&quot;, props);
+  };
+};
+
+var layoutProps = {
+  _frontmatter: _frontmatter
+};
+var MDXLayout = &quot;wrapper&quot;;
+return function MDXContent(_ref) {
+  var components = _ref.components,
+      props = _objectWithoutProperties(_ref, [&quot;components&quot;]);
+
+  return mdx(MDXLayout, _extends({}, layoutProps, props, {
+    components: components,
+    mdxType: &quot;MDXLayout&quot;
+  }), mdx(&quot;p&quot;, null, &quot;I learned about the origins of the name Ghibli yesterday. From Wikipedia:&quot;), mdx(&quot;blockquote&quot;, null, mdx(&quot;p&quot;, {
+    parentName: &quot;blockquote&quot;
+  }, &quot;The name Ghibli was given by Hayao Miyazaki from the Italian noun ghibli, based on the Libyan-Arabic name for the hot desert wind of that country, the idea being the studio would \u201Cblow a new wind through the anime industry.\u201D It also refers to an Italian aircraft, the Caproni Ca.309 Ghibli.&quot;)), mdx(&quot;p&quot;, null, &quot;The motifs of wind and aircraft (and even Caproni) are put in the forefront in this film. Miyazaki\u2019s reverence for the craft of building an airplane provides some clear analogies to the craft of animation, and the act of creation in general. We see this in Jiro\u2019s dreams, in his hard work, and my favourite bit was in the depiction of Jiro\u2019s \u201Cflow state\u201D, where he\u2019s fully concentrated on his work and everything else fades into the background, and he and his desk are flying through the air.&quot;), mdx(&quot;p&quot;, null, &quot;\u201CArtists are only creative for 10 years \u2026 we engineers are no different. Live your 10 years to the full.\u201D What an audacious thing for the film to say after Miyazaki has put out banger after banger since 1979.&quot;), mdx(&quot;p&quot;, null, &quot;This is a unique Miyazaki in that it\u2019s grounded in the real world, and about real people. And yet the fantasy element is still there, because the real world is just as wondrous. I\u2019ve read some Miyazaki quotes where he often thinks about his intended audience when choosing the subjects of his films. He wants to make films for children of this age range, or that age range. &quot;, mdx(&quot;em&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;The Wind Rises&quot;), &quot; doesn\u2019t feel like a children\u2019s film at all. It feels like a film that Miyazaki made for himself, and I love that a lot. Jiro looks up to Caproni the same way that Miyazaki looks up to Jiro. It\u2019s really fascinating to think about how so much creation is built on the shoulders of giants.&quot;), mdx(&quot;p&quot;, null, &quot;(It\u2019s certainly a bit uncomfortable to romanticize the creation of warplanes, but I think it\u2019s possible to acknowledge that without detracting from the beauty of this film.)&quot;), mdx(&quot;p&quot;, null, &quot;Miyazaki has always seemed uninterested in depicting adult romance in his previous works, so it was a delightful surprise that we got to witness some here. The genre-shift into romance for the second half of the film felt completely natural, and there were so many touching moments that made my heart feel full.&quot;), mdx(&quot;p&quot;, null, &quot;Jiro\u2019s constant kindness to others shows us that dedicating your life to your individualistic dreams is not necessarily incompatible with providing care and tenderness to others. Take notes, Damien Chazelle.&quot;), mdx(&quot;p&quot;, null, &quot;4.5 / 5 stars.&quot;), mdx(&quot;p&quot;, null, mdx(&quot;em&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;Originally posted to my &quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;em&quot;
+  }, {
+    &quot;href&quot;: &quot;https://letterboxd.com/ericbai/film/the-wind-rises/&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noreferrer&quot;
+  }), &quot;Letterboxd&quot;), &quot;.&quot;)));
 }
 ;
 MDXContent.isMDXComponent = true;</content:encoded></item><item><title><![CDATA[How I Find Movies]]></title><description><![CDATA[Lessons on choosing the next movie to watch, going to film festivals, and sifting through all the streaming services.]]></description><link>https://ericbai.co/how-i-find-movies</link><guid isPermaLink="false">https://ericbai.co/how-i-find-movies</guid><dc:creator><![CDATA[Eric Bai]]></dc:creator><pubDate>Wed, 06 May 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
